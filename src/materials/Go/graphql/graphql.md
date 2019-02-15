@@ -4,98 +4,90 @@ type: 'GitHub'
 img: './screenshot.png'
 material:
   title: 'graphql'
-  url: 'https://github.com/graphql-go/graphql'
-  github_url: 'https://github.com/graphql-go/graphql'
-  subscribers_count: '138'
-  stargazers_count: '4342'
-  tags: ['graphql','graphql-go','subscriptions']
-  subtitle: 'An implementation of GraphQL for Go / Golang'
-  clone_url: 'https://github.com/graphql-go/graphql.git'
-  ssh_url: 'git@github.com:graphql-go/graphql.git'
-  pushed_at: '2019-02-12T11:13:40Z'
-  updated_at: '2019-02-15T15:25:11Z'
+  url: 'https://blog.machinebox.io/a-graphql-client-library-for-go-5bffd0455878'
+  github_url: 'https://github.com/machinebox/graphql'
+  subscribers_count: '7'
+  stargazers_count: '326'
+  tags: ['client','godoc','golang','graphql','machinebox','sdk']
+  subtitle: 'Simple low-level GraphQL HTTP client for Go'
+  clone_url: 'https://github.com/machinebox/graphql.git'
+  ssh_url: 'git@github.com:machinebox/graphql.git'
+  pushed_at: '2019-01-30T22:11:31Z'
+  updated_at: '2019-02-10T20:36:09Z'
   author:
-    name: 'graphql-go'
-    avatar: 'https://avatars3.githubusercontent.com/u/14210643?v=4'
-    github_url: 'https://github.com/graphql-go'
+    name: 'machinebox'
+    avatar: 'https://avatars3.githubusercontent.com/u/25792946?v=4'
+    github_url: 'https://github.com/machinebox'
   latestRelease:
-    tag_name: 'v0.7.7'
-    name: 'v0.7.7'
-    url: 'https://github.com/graphql-go/graphql/releases/tag/v0.7.7'
-    created_at: '2018-12-03T01:16:34Z'
+    tag_name: null
+    name: null
+    url: null
+    created_at: null
 ---
-# graphql [![CircleCI](https://circleci.com/gh/graphql-go/graphql/tree/master.svg?style=svg)](https://circleci.com/gh/graphql-go/graphql/tree/master) [![GoDoc](https://godoc.org/graphql.co/graphql?status.svg)](https://godoc.org/github.com/graphql-go/graphql) [![Coverage Status](https://coveralls.io/repos/github/graphql-go/graphql/badge.svg?branch=master)](https://coveralls.io/github/graphql-go/graphql?branch=master) [![Join the chat at https://gitter.im/graphql-go/graphql](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/graphql-go/graphql?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# graphql [![GoDoc](https://godoc.org/github.com/machinebox/graphql?status.png)](http://godoc.org/github.com/machinebox/graphql) [![Build Status](https://travis-ci.org/machinebox/graphql.svg?branch=master)](https://travis-ci.org/machinebox/graphql) [![Go Report Card](https://goreportcard.com/badge/github.com/machinebox/graphql)](https://goreportcard.com/report/github.com/machinebox/graphql)
 
-An implementation of GraphQL in Go. Follows the official reference implementation [`graphql-js`](https://github.com/graphql/graphql-js).
+Low-level GraphQL client for Go.
 
-Supports: queries, mutations & subscriptions.
+* Simple, familiar API
+* Respects `context.Context` timeouts and cancellation
+* Build and execute any kind of GraphQL request
+* Use strong Go types for response data
+* Use variables and upload files
+* Simple error handling
 
-### Documentation
+## Installation
+Make sure you have a working Go environment. To install graphql, simply run:
 
-godoc: https://godoc.org/github.com/graphql-go/graphql
-
-### Getting Started
-
-To install the library, run:
-```bash
-go get github.com/graphql-go/graphql
+```
+$ go get github.com/machinebox/graphql
 ```
 
-The following is a simple example which defines a schema with a single `hello` string-type field and a `Resolve` method which returns the string `world`. A GraphQL query is performed against this schema with the resulting output printed in JSON format.
+## Usage
 
 ```go
-package main
+import 'context'
 
-import (
-	'encoding/json'
-	'fmt'
-	'log'
+// create a client (safe to share across requests)
+client := graphql.NewClient('https://machinebox.io/graphql')
 
-	'github.com/graphql-go/graphql'
-)
+// make a request
+req := graphql.NewRequest(`
+    query ($key: String!) {
+        items (id:$key) {
+            field1
+            field2
+            field3
+        }
+    }
+`)
 
-func main() {
-	// Schema
-	fields := graphql.Fields{
-		'hello': &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				return 'world', nil
-			},
-		},
-	}
-	rootQuery := graphql.ObjectConfig{Name: 'RootQuery', Fields: fields}
-	schemaConfig := graphql.SchemaConfig{Query: graphql.NewObject(rootQuery)}
-	schema, err := graphql.NewSchema(schemaConfig)
-	if err != nil {
-		log.Fatalf('failed to create new schema, error: %v', err)
-	}
+// set any variables
+req.Var('key', 'value')
 
-	// Query
-	query := `
-		{
-			hello
-		}
-	`
-	params := graphql.Params{Schema: schema, RequestString: query}
-	r := graphql.Do(params)
-	if len(r.Errors) > 0 {
-		log.Fatalf('failed to execute graphql operation, errors: %+v', r.Errors)
-	}
-	rJSON, _ := json.Marshal(r)
-	fmt.Printf('%s \n', rJSON) // {“data”:{“hello”:”world”}}
+// set header fields
+req.Header.Set('Cache-Control', 'no-cache')
+
+// define a Context for the request
+ctx := context.Background()
+
+// run it and capture the response
+var respData ResponseStruct
+if err := client.Run(ctx, req, &respData); err != nil {
+    log.Fatal(err)
 }
 ```
-For more complex examples, refer to the [examples/](https://github.com/graphql-go/graphql/tree/master/examples/) directory and [graphql_test.go](https://github.com/graphql-go/graphql/blob/master/graphql_test.go).
 
-### Third Party Libraries
-| Name          | Author        | Description  |
-|:-------------:|:-------------:|:------------:|
-| [graphql-go-handler](https://github.com/graphql-go/graphql-go-handler) | [Hafiz Ismail](https://github.com/sogko) | Middleware to handle GraphQL queries through HTTP requests. |
-| [graphql-relay-go](https://github.com/graphql-go/graphql-relay-go) | [Hafiz Ismail](https://github.com/sogko) | Lib to construct a graphql-go server supporting react-relay. |
-| [golang-relay-starter-kit](https://github.com/sogko/golang-relay-starter-kit) | [Hafiz Ismail](https://github.com/sogko) | Barebones starting point for a Relay application with Golang GraphQL server. |
-| [dataloader](https://github.com/nicksrandall/dataloader) | [Nick Randall](https://github.com/nicksrandall) | [DataLoader](https://github.com/facebook/dataloader) implementation in Go. |
+### File support via multipart form data
 
-### Blog Posts
-- [Golang + GraphQL + Relay](http://wehavefaces.net/)
+By default, the package will send a JSON body. To enable the sending of files, you can opt to
+use multipart form data instead using the `UseMultipartForm` option when you create your `Client`:
 
+```
+client := graphql.NewClient('https://machinebox.io/graphql', graphql.UseMultipartForm())
+```
+
+For more information, [read the godoc package documentation](http://godoc.org/github.com/machinebox/graphql) or the [blog post](https://blog.machinebox.io/a-graphql-client-library-for-go-5bffd0455878).
+
+## Thanks
+
+Thanks to [Chris Broadfoot](https://github.com/broady) for design help.
