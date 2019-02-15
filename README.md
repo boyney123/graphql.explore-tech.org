@@ -36,11 +36,11 @@ Adding material to the website is super easy!
 
 For example to add a new component you would checkout the project and run this command:
 
-`npm run add:component https://github.com/airbnb/react-dates`.
+`npm run add:tool https://github.com/graphql/graphiql`.
 
 Thats it.
 
-- This would add the component the to the website
+- This would add the tool the to the website
 - Take a screenshot
 - Commit for you
 
