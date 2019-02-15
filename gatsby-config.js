@@ -22,7 +22,7 @@ module.exports = {
       Tools: {
         subtitle: 'Level up your React with tools',
       },
-      JavaScript: {
+      Javascript: {
         subtitle: 'GraphQL JavaScript Libraries',
       },
     },

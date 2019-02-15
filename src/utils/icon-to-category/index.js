@@ -18,5 +18,5 @@ import frameworks from '../../icons/ui-frameworks.svg'
 
 export default {
   Tools: hammer,
-  JavaScript: frameworks,
+  Javascript: frameworks,
 }
