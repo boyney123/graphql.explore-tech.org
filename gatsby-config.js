@@ -43,6 +43,9 @@ module.exports = {
       Go: {
         subtitle: 'GraphQL Go Libraries',
       },
+      Scala: {
+        subtitle: 'GraphQL Scala Libraries',
+      },
     },
   },
   plugins: [
