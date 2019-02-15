@@ -1,0 +1,185 @@
+---
+path: '/materials/react-reach'
+type: 'GitHub'
+img: './screenshot.png'
+material:
+  title: 'react-reach'
+  url: 'https://github.com/kennetpostigo/react-reach'
+  github_url: 'https://github.com/kennetpostigo/react-reach'
+  subscribers_count: '9'
+  stargazers_count: '132'
+  tags: ['graphql','react','redux']
+  subtitle: 'A small library for React to communicate with GraphQL'
+  clone_url: 'https://github.com/kennetpostigo/react-reach.git'
+  ssh_url: 'git@github.com:kennetpostigo/react-reach.git'
+  pushed_at: '2016-07-01T20:22:37Z'
+  updated_at: '2019-01-24T19:42:54Z'
+  author:
+    name: 'kennetpostigo'
+    avatar: 'https://avatars0.githubusercontent.com/u/8888991?v=4'
+    github_url: 'https://github.com/kennetpostigo'
+  latestRelease:
+    tag_name: '0.3.1'
+    name: 'UMD build with webpack'
+    url: 'https://github.com/kennetpostigo/react-reach/releases/tag/0.3.1'
+    created_at: '2016-03-09T00:28:03Z'
+---
+# react-reach
+> A small library for react to communicate with graphQL
+
+[![version](https://img.shields.io/npm/v/react-reach.svg?style=flat-square)](http://npm.im/react-reach)
+[![downloads](https://img.shields.io/npm/dm/react-reach.svg?style=flat-square)](http://npm-stat.com/charts.html?package=react-reach&from=2015-08-01)
+[![MIT License](https://img.shields.io/npm/l/react-reach.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+
+react-reach helps you write applications that use tools you are familiar with from the
+react ecosystem. react-reach is designed to be used along side redux and react.
+React-reach works as the layer that handles communication of data between React
+and graphQL. Reach enables developers to make queries and mutations against GraphQL.
+
+## The need for react-reach
+When developing applications with react everything goes smoothly until you begin
+to account for request to the server. Usually you would go about making network
+request to specified endpoints with REST, or networks request to `'/graphql'`
+if you use GraphQL. Now Relay may come to mind, and what makes reach different
+is that it only does one thing. You can use reach along Redux.
+
+## Features are a Work In Progress
+* [x] __Talk to a GraphQL server__
+* [x] __Cache responses in [Redux](https://github.com/rackt/redux) store__
+* [ ] __Optimistic Updates__
+* [ ] __Create Example Application__
+* [ ] __Create Blog Post with Explanations__
+* [x] __UMD Build__
+* [x] __When used with [react-router](https://github.com/rackt/react-router) dynamically request data needed `onEnter` & `onLeave` Hooks__
+
+## Developer Guide
++ Need to create a blog post to demonstrate how to use it in a sample application
+
+## Usage
+```js
+npm install --save react-reach
+```
+
+react-reach makes fetching data from a GraphQL server as easy as this:
+```js
+//reachGraphQL() to make a query for some data, or add mutation
+//I created this function with for simply communicating back and forth with graphQL
+//params: reachGraphQL(url, query/mutation, queryParameters)
+import React from 'react';
+import reactDOM from 'react-dom';
+import {reachGraphQL} from 'react-reach';
+
+class App extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      shipName: ''
+    };
+  };
+
+  getAllStarShips () {
+    reachGraphQL('http://localhost:4000/', `{
+     allStarships(first: 7) {
+       edges {
+         node {
+           id
+           name
+           model
+           costInCredits
+           pilotConnection {
+             edges {
+               node {
+                 ...pilotFragment
+               }
+             }
+           }
+         }
+       }
+     }
+    }
+    fragment pilotFragment on Person {
+     name
+     homeworld { name }
+   }`, {})
+   .then((data) => {
+      this.setState({
+        shipName: data.allStarships.edges[1].node.name
+      });
+   });
+  }
+
+  componentDidMount() {
+    this.getAllStarShips();
+  }
+
+  render() {
+    console.log('state:',JSON.stringify(this.state.shipName, null, 2));
+    return (
+      <div>
+        <h1>React-Reach!</h1>
+        <p>{this.state.shipName}</p>
+      </div>
+    );
+  }
+}
+
+reactDOM.render(
+  <App></App>,
+  document.getElementById('app')
+);
+
+//reachWithDispatch() to make a query and dispatch actionCreator passed in
+//I created this function for receiving data from the server and automatically caching it in the redux store.
+//To be used with redux-thunk or any similar middleware.
+//params: reachWithDispatch(url, query/mutation, queryParameters, actionCreator)
+
+import { reachWithDispatch } from 'react-reach';
+
+reachWithDispatch('localhost:1000', `{
+    user(id: '1') {
+        name
+    }
+}`, {}, somePredefinedActionCreator);
+
+
+//reachWithOpts() to make a query and dispatch specified actionCreators from an Object  passed in
+//I created this function for sending data to the server and optimistically updating the redux store client-side
+//To be used with redux-thunk or any similar middleware.
+//params: reachWithDispatch(url, query/mutation, queryParameters, actionCreator, store, retry)
+//Automatically handles updating redux store client-side
+//This function is still a WIP not implemented
+
+import { reachWithOpts } from 'react-reach';
+
+reachWithOpts('localhost:1000', `mutation {
+    CreateUser {
+        _id: '12345',
+        name: JohnDoe
+    }
+}`, {}, ObjectContainingActionCreators, store, true);
+```
+
+## Caveat
+
+Make sure to enable CORS on your server with __ OPTIONS__ to avoid CORS error
+or Preflight fetch error. Heres an example when using Express:
+
+```js
+app.use(function (req, res, next) {
+	res.setHeader('Access-Control-Allow-Origin', '*');
+	res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
+	res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization');
+
+	if (req.method === 'OPTIONS') {
+		res.status(200).end();
+	} else {
+		next();
+	}
+	next();
+});
+```
+
+## The State of react-reach
+I began working on react-reach the past few day. I hope people are willing to
+try it out and help me spot bugs and problems.Feel free to give me feedback and
+request features you would like to see in the project.
