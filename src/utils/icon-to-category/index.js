@@ -18,9 +18,13 @@ import frameworks from '../../icons/ui-frameworks.svg'
 import tools from '../../icons/tools.svg'
 import javascript from '../../icons/javascript.svg'
 import relay from '../../icons/relay.svg'
+import ruby from '../../icons/ruby.svg'
+import php from '../../icons/php.svg'
 
 export default {
   Tools: hammer,
   Javascript: javascript,
   Relay: relay,
+  Ruby: ruby,
+  Php: php,
 }
