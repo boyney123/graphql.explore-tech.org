@@ -9,7 +9,7 @@ material:
   subscribers_count: '2'
   stargazers_count: '10'
   tags: ['']
-  subtitle: 'Built with React, Relay, GraphQL, and all babel-node's ES2016 features!'
+  subtitle: 'Built with React, Relay, GraphQL, and all babel-nodes ES2016 features!'
   clone_url: 'https://github.com/alex-cory/portfolio.git'
   ssh_url: 'git@github.com:alex-cory/portfolio.git'
   pushed_at: '2017-10-14T20:50:22Z'

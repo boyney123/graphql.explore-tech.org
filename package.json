@@ -39,7 +39,8 @@
     "add:js-lib": "node src/scripts/create-material/index.js Javascript",
     "add:relay": "node src/scripts/create-material/index.js Relay",
     "add:ruby": "node src/scripts/create-material/index.js Ruby",
-    "add:php": "node src/scripts/create-material/index.js Php"
+    "add:php": "node src/scripts/create-material/index.js Php",
+    "add:python": "node src/scripts/create-material/index.js Python"
   },
   "devDependencies": {
     "babel-jest": "^24.1.0",

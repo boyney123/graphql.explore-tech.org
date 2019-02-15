@@ -34,6 +34,9 @@ module.exports = {
       Php: {
         subtitle: 'GraphQL PHP Libraries',
       },
+      Python: {
+        subtitle: 'GraphQL Python Libraries',
+      },
     },
   },
   plugins: [
