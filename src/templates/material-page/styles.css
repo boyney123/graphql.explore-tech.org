@@ -25,13 +25,15 @@
 
 .side-bar {
   padding-right: 40px;
+  color: #2b2e3b;
 }
 
 .side-bar-item__tag {
-  background: #e10098;
+  background: #dc54b0;
   margin: 10px 5px 10px 0;
   padding: 0 5px;
   display: block;
+  color: white;
 }
 
 .material__screenshot {

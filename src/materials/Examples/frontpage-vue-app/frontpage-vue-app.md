@@ -9,7 +9,7 @@ material:
   subscribers_count: '4'
   stargazers_count: '72'
   tags: ['']
-  subtitle: 'Apollo 'hello world' app, for Vue 2.0'
+  subtitle: 'Apollo hello world app, for Vue 2.0'
   clone_url: 'https://github.com/Akryum/frontpage-vue-app.git'
   ssh_url: 'git@github.com:Akryum/frontpage-vue-app.git'
   pushed_at: '2017-04-29T07:44:32Z'

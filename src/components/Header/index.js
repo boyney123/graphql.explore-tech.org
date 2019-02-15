@@ -17,7 +17,7 @@ const Header = ({ title, subtitle, contribute }) => {
               rel="noopener noreferrer"
             >
               <i className="fab fa-github" />
-              Contribute more {title.toLowerCase()}
+              Contribute
             </a>
           )}
         </div>

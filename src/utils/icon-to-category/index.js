@@ -1,32 +1,30 @@
-import tutorial from '../../icons/tutorial.svg'
-import form from '../../icons/form.svg'
-import page from '../../icons/page.svg'
-import bricks from '../../icons/bricks.svg'
-import hammer from '../../icons/hammer.svg'
-import testing from '../../icons/testing.svg'
-import library from '../../icons/library.svg'
-import routing from '../../icons/routing.svg'
-import styles from '../../icons/styles.svg'
 import example from '../../icons/example.svg'
-import redux from '../../icons/redux.svg'
-import data from '../../icons/data.svg'
-import devtools from '../../icons/computer.svg'
-import integration from '../../icons/integration.svg'
-import charts from '../../icons/charts.svg'
-import frameworks from '../../icons/ui-frameworks.svg'
-
 import tools from '../../icons/tools.svg'
 import javascript from '../../icons/javascript.svg'
 import relay from '../../icons/relay.svg'
 import ruby from '../../icons/ruby.svg'
-import php from '../../icons/php.svg'
-import python from '../../icons/python.svg'
+import php from '../../icons/php.png'
+import python from '../../icons/python.png'
+import dotnet from '../../icons/dotnet.svg'
+import elixir from '../../icons/elixir.png'
+import hammer from '../../icons/hammer.svg'
+import go from '../../icons/go.svg'
+import java from '../../icons/java.png'
+import scala from '../../icons/scala.png'
+import sql from '../../icons/sql.png'
 
 export default {
   Tools: hammer,
+  Examples: example,
   Javascript: javascript,
   Relay: relay,
   Ruby: ruby,
   Php: php,
   Python: python,
+  Dotnet: dotnet,
+  Elixir: elixir,
+  Go: go,
+  Java: java,
+  Scala: scala,
+  Sql: sql,
 }

@@ -9,7 +9,7 @@ material:
   subscribers_count: '0'
   stargazers_count: '0'
   tags: ['android','apollographql','graphql']
-  subtitle: '📄 Apollo 'hello world' app, for Android'
+  subtitle: '📄 Apollo hello world app, for Android'
   clone_url: 'https://github.com/rnitame/apollo-frontpage-android-app.git'
   ssh_url: 'git@github.com:rnitame/apollo-frontpage-android-app.git'
   pushed_at: '2018-12-13T14:49:26Z'

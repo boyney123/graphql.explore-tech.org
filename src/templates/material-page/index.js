@@ -135,11 +135,11 @@ export default function Template({ data, ...test }) {
                 {tags.length > 0 && (
                   <div>
                     <h5>Keywords </h5>
-                    <p className="is-size-6 tags">
+                    <ul className="is-size-6 tags">
                       {tags.map(tag => (
-                        <span className="side-bar-item__tag">{tag}</span>
+                        <li className="side-bar-item__tag">{tag}</li>
                       ))}
-                    </p>
+                    </ul>
                   </div>
                 )}
               </div>
