@@ -40,7 +40,8 @@
     "add:relay": "node src/scripts/create-material/index.js Relay",
     "add:ruby": "node src/scripts/create-material/index.js Ruby",
     "add:php": "node src/scripts/create-material/index.js Php",
-    "add:python": "node src/scripts/create-material/index.js Python"
+    "add:python": "node src/scripts/create-material/index.js Python",
+    "add:java": "node src/scripts/create-material/index.js Java"
   },
   "devDependencies": {
     "babel-jest": "^24.1.0",

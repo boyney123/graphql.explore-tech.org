@@ -20,6 +20,7 @@ import javascript from '../../icons/javascript.svg'
 import relay from '../../icons/relay.svg'
 import ruby from '../../icons/ruby.svg'
 import php from '../../icons/php.svg'
+import python from '../../icons/python.svg'
 
 export default {
   Tools: hammer,
@@ -27,4 +28,5 @@ export default {
   Relay: relay,
   Ruby: ruby,
   Php: php,
+  Python: python,
 }
