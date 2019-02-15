@@ -16,8 +16,8 @@ describe('Category', () => {
   }
 
   it('when clicking on category the user is navigated to the name of the category', () => {
-    const wrapper = shallow(<Category name="Components" />)
+    const wrapper = shallow(<Category name="Tools" />)
     wrapper.find('.category').simulate('click')
-    expect(navigate).toHaveBeenCalledWith('Components')
+    expect(navigate).toHaveBeenCalledWith('Tools')
   })
 })

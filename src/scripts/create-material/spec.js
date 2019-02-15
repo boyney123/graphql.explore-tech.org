@@ -26,7 +26,7 @@ let exit
 const scriptArgs = [
   '_',
   '_',
-  'Tutorials',
+  'Examples',
   'https://github.com/boyney123/graphql.explore-tech.org',
 ]
 describe('create-material', () => {
@@ -63,7 +63,7 @@ describe('create-material', () => {
       const result = await script([
         '_',
         '_',
-        'Tutorials',
+        'Examples',
         'https://www.youtube.com',
       ])
       expect(exit).toHaveBeenCalledWith(1)
@@ -73,10 +73,11 @@ describe('create-material', () => {
   describe('markdown file', () => {
     it('takes all the data from GitHub and formats it into a markdown and converts all double quotes into single quotes', async () => {
       const result = await script(scriptArgs)
+
       const data = await fs.readFileSync(
         path.join(
           __dirname,
-          '/tmp/Tutorials/graphql.explore-tech.org/graphql.explore-tech.org.md'
+          '/tmp/Examples/graphql.explore-tech.org/graphql.explore-tech.org.md'
         ),
         'utf8'
       )
@@ -93,7 +94,8 @@ describe('create-material', () => {
           stargazers_count: '5258',
           tags: [''],
           subtitle: 'Find all things React.',
-          clone_url: 'https://github.com/boyney123/graphql.explore-tech.org.git',
+          clone_url:
+            'https://github.com/boyney123/graphql.explore-tech.org.git',
           ssh_url: 'git@github.com:boyney123/graphql.explore-tech.org.git',
           pushed_at: '2019-02-06T18:07:17Z',
           updated_at: '2019-02-08T08:20:12Z',
@@ -151,7 +153,7 @@ describe('create-material', () => {
       expect(puppeteer._page.screenshot).toHaveBeenCalledWith({
         path: path.join(
           __dirname,
-          'tmp/Tutorials/graphql.explore-tech.org/screenshot.png'
+          'tmp/Examples/graphql.explore-tech.org/screenshot.png'
         ),
       })
     })
@@ -164,20 +166,20 @@ describe('create-material', () => {
       delete testData['homepage']
 
       nock('https://api.github.com')
-        .get('/repos/boyney123/react.explore-tech-no-homepage.org')
+        .get('/repos/boyney123/graphql.explore-tech-no-homepage.org')
         .reply(200, testData)
-        .get('/repos/boyney123/react.explore-tech-no-homepage.org/readme')
+        .get('/repos/boyney123/graphql.explore-tech-no-homepage.org/readme')
         .reply(200, mockReadmeData)
         .get(
-          '/repos/boyney123/react.explore-tech-no-homepage.org/releases/latest'
+          '/repos/boyney123/graphql.explore-tech-no-homepage.org/releases/latest'
         )
         .reply(200, mockReadmeData)
 
       const result = await script([
         '_',
         '_',
-        'Tutorials',
-        'https://github.com/boyney123/react.explore-tech-no-homepage.org',
+        'Examples',
+        'https://github.com/boyney123/graphql.explore-tech-no-homepage.org',
       ])
 
       expect(puppeteer._page.goto).toHaveBeenCalledWith(

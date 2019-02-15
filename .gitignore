@@ -13,6 +13,8 @@ pids
 
 TODO
 
+src/scripts/**/tmp/*
+
 yarn.lock
 package-lock.json
 

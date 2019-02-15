@@ -176,20 +176,20 @@ exports[`Material Page matches the snapshot 1`] = `
               <h5>
                 Keywords 
               </h5>
-              <p
+              <ul
                 className="is-size-6 tags"
               >
-                <span
+                <li
                   className="side-bar-item__tag"
                 >
                   random
-                </span>
-                <span
+                </li>
+                <li
                   className="side-bar-item__tag"
                 >
                   test
-                </span>
-              </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

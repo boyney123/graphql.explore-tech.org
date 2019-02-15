@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Category when the name prop is set to "Boilerplates is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+exports[`Category when the name prop is set to "Dotnet is reads the siteConfig and uses the configured icon and subtitle 1`] = `
 <div
   className="category-container column is-one-third"
 >
@@ -15,7 +15,7 @@ exports[`Category when the name prop is set to "Boilerplates is reads the siteCo
     <h2
       className=" has-text-centered"
     >
-      Boilerplates
+      Dotnet
     </h2>
     <div
       className="category-content"
@@ -29,7 +29,7 @@ exports[`Category when the name prop is set to "Boilerplates is reads the siteCo
           <p
             className="subtitle is-6"
           >
-            Get setup within minutes
+            GraphQL .NET Libraries
           </p>
         </div>
       </div>
@@ -38,7 +38,7 @@ exports[`Category when the name prop is set to "Boilerplates is reads the siteCo
 </div>
 `;
 
-exports[`Category when the name prop is set to "Charts is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+exports[`Category when the name prop is set to "Elixir is reads the siteConfig and uses the configured icon and subtitle 1`] = `
 <div
   className="category-container column is-one-third"
 >
@@ -53,7 +53,7 @@ exports[`Category when the name prop is set to "Charts is reads the siteConfig a
     <h2
       className=" has-text-centered"
     >
-      Charts
+      Elixir
     </h2>
     <div
       className="category-content"
@@ -67,121 +67,7 @@ exports[`Category when the name prop is set to "Charts is reads the siteConfig a
           <p
             className="subtitle is-6"
           >
-            Visualise data with React
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Category when the name prop is set to "Components is reads the siteConfig and uses the configured icon and subtitle 1`] = `
-<div
-  className="category-container column is-one-third"
->
-  <div
-    className="category"
-    onClick={[Function]}
-  >
-    <img
-      alt="icon"
-      src="test-file-stub"
-    />
-    <h2
-      className=" has-text-centered"
-    >
-      Components
-    </h2>
-    <div
-      className="category-content"
-    >
-      <div
-        className="media"
-      >
-        <div
-          className="media-content"
-        >
-          <p
-            className="subtitle is-6"
-          >
-            List of React components
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Category when the name prop is set to "Data is reads the siteConfig and uses the configured icon and subtitle 1`] = `
-<div
-  className="category-container column is-one-third"
->
-  <div
-    className="category"
-    onClick={[Function]}
-  >
-    <img
-      alt="icon"
-      src="test-file-stub"
-    />
-    <h2
-      className=" has-text-centered"
-    >
-      Data
-    </h2>
-    <div
-      className="category-content"
-    >
-      <div
-        className="media"
-      >
-        <div
-          className="media-content"
-        >
-          <p
-            className="subtitle is-6"
-          >
-            Managing data with React
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Category when the name prop is set to "Developer is reads the siteConfig and uses the configured icon and subtitle 1`] = `
-<div
-  className="category-container column is-one-third"
->
-  <div
-    className="category"
-    onClick={[Function]}
-  >
-    <img
-      alt="icon"
-      src="test-file-stub"
-    />
-    <h2
-      className=" has-text-centered"
-    >
-      Developer
-    </h2>
-    <div
-      className="category-content"
-    >
-      <div
-        className="media"
-      >
-        <div
-          className="media-content"
-        >
-          <p
-            className="subtitle is-6"
-          >
-            React developer tools & experience
+            GraphQL Elixir Libraries
           </p>
         </div>
       </div>
@@ -219,7 +105,7 @@ exports[`Category when the name prop is set to "Examples is reads the siteConfig
           <p
             className="subtitle is-6"
           >
-            Explore example applications
+            Example Projects using GraphQL
           </p>
         </div>
       </div>
@@ -228,7 +114,7 @@ exports[`Category when the name prop is set to "Examples is reads the siteConfig
 </div>
 `;
 
-exports[`Category when the name prop is set to "Forms is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+exports[`Category when the name prop is set to "Go is reads the siteConfig and uses the configured icon and subtitle 1`] = `
 <div
   className="category-container column is-one-third"
 >
@@ -243,7 +129,7 @@ exports[`Category when the name prop is set to "Forms is reads the siteConfig an
     <h2
       className=" has-text-centered"
     >
-      Forms
+      Go
     </h2>
     <div
       className="category-content"
@@ -257,7 +143,7 @@ exports[`Category when the name prop is set to "Forms is reads the siteConfig an
           <p
             className="subtitle is-6"
           >
-            Hands on with Forms
+            GraphQL Go Libraries
           </p>
         </div>
       </div>
@@ -266,7 +152,7 @@ exports[`Category when the name prop is set to "Forms is reads the siteConfig an
 </div>
 `;
 
-exports[`Category when the name prop is set to "Frameworks is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+exports[`Category when the name prop is set to "Java is reads the siteConfig and uses the configured icon and subtitle 1`] = `
 <div
   className="category-container column is-one-third"
 >
@@ -281,7 +167,7 @@ exports[`Category when the name prop is set to "Frameworks is reads the siteConf
     <h2
       className=" has-text-centered"
     >
-      Frameworks
+      Java
     </h2>
     <div
       className="category-content"
@@ -295,7 +181,7 @@ exports[`Category when the name prop is set to "Frameworks is reads the siteConf
           <p
             className="subtitle is-6"
           >
-            React UI Component Frameworks
+            GraphQL Java Libraries
           </p>
         </div>
       </div>
@@ -304,7 +190,7 @@ exports[`Category when the name prop is set to "Frameworks is reads the siteConf
 </div>
 `;
 
-exports[`Category when the name prop is set to "Integration is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+exports[`Category when the name prop is set to "Javascript is reads the siteConfig and uses the configured icon and subtitle 1`] = `
 <div
   className="category-container column is-one-third"
 >
@@ -319,7 +205,7 @@ exports[`Category when the name prop is set to "Integration is reads the siteCon
     <h2
       className=" has-text-centered"
     >
-      Integration
+      Javascript
     </h2>
     <div
       className="category-content"
@@ -333,7 +219,7 @@ exports[`Category when the name prop is set to "Integration is reads the siteCon
           <p
             className="subtitle is-6"
           >
-            React integration with others
+            GraphQL JavaScript Libraries
           </p>
         </div>
       </div>
@@ -342,7 +228,7 @@ exports[`Category when the name prop is set to "Integration is reads the siteCon
 </div>
 `;
 
-exports[`Category when the name prop is set to "Libraries is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+exports[`Category when the name prop is set to "Php is reads the siteConfig and uses the configured icon and subtitle 1`] = `
 <div
   className="category-container column is-one-third"
 >
@@ -357,7 +243,7 @@ exports[`Category when the name prop is set to "Libraries is reads the siteConfi
     <h2
       className=" has-text-centered"
     >
-      Libraries
+      Php
     </h2>
     <div
       className="category-content"
@@ -371,7 +257,7 @@ exports[`Category when the name prop is set to "Libraries is reads the siteConfi
           <p
             className="subtitle is-6"
           >
-            Integrate with great libraries
+            GraphQL PHP Libraries
           </p>
         </div>
       </div>
@@ -380,7 +266,7 @@ exports[`Category when the name prop is set to "Libraries is reads the siteConfi
 </div>
 `;
 
-exports[`Category when the name prop is set to "Redux is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+exports[`Category when the name prop is set to "Python is reads the siteConfig and uses the configured icon and subtitle 1`] = `
 <div
   className="category-container column is-one-third"
 >
@@ -395,7 +281,7 @@ exports[`Category when the name prop is set to "Redux is reads the siteConfig an
     <h2
       className=" has-text-centered"
     >
-      Redux
+      Python
     </h2>
     <div
       className="category-content"
@@ -409,7 +295,7 @@ exports[`Category when the name prop is set to "Redux is reads the siteConfig an
           <p
             className="subtitle is-6"
           >
-            All things Redux
+            GraphQL Python Libraries
           </p>
         </div>
       </div>
@@ -418,7 +304,7 @@ exports[`Category when the name prop is set to "Redux is reads the siteConfig an
 </div>
 `;
 
-exports[`Category when the name prop is set to "Routing is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+exports[`Category when the name prop is set to "Relay is reads the siteConfig and uses the configured icon and subtitle 1`] = `
 <div
   className="category-container column is-one-third"
 >
@@ -433,7 +319,7 @@ exports[`Category when the name prop is set to "Routing is reads the siteConfig 
     <h2
       className=" has-text-centered"
     >
-      Routing
+      Relay
     </h2>
     <div
       className="category-content"
@@ -447,7 +333,7 @@ exports[`Category when the name prop is set to "Routing is reads the siteConfig 
           <p
             className="subtitle is-6"
           >
-            Routing with React
+            GraphQL Relay Libraries
           </p>
         </div>
       </div>
@@ -456,7 +342,7 @@ exports[`Category when the name prop is set to "Routing is reads the siteConfig 
 </div>
 `;
 
-exports[`Category when the name prop is set to "Styles is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+exports[`Category when the name prop is set to "Ruby is reads the siteConfig and uses the configured icon and subtitle 1`] = `
 <div
   className="category-container column is-one-third"
 >
@@ -471,7 +357,7 @@ exports[`Category when the name prop is set to "Styles is reads the siteConfig a
     <h2
       className=" has-text-centered"
     >
-      Styles
+      Ruby
     </h2>
     <div
       className="category-content"
@@ -485,7 +371,7 @@ exports[`Category when the name prop is set to "Styles is reads the siteConfig a
           <p
             className="subtitle is-6"
           >
-            Making your project look great
+            GraphQL Ruby Libraries
           </p>
         </div>
       </div>
@@ -494,7 +380,7 @@ exports[`Category when the name prop is set to "Styles is reads the siteConfig a
 </div>
 `;
 
-exports[`Category when the name prop is set to "Testing is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+exports[`Category when the name prop is set to "Scala is reads the siteConfig and uses the configured icon and subtitle 1`] = `
 <div
   className="category-container column is-one-third"
 >
@@ -509,7 +395,7 @@ exports[`Category when the name prop is set to "Testing is reads the siteConfig 
     <h2
       className=" has-text-centered"
     >
-      Testing
+      Scala
     </h2>
     <div
       className="category-content"
@@ -523,7 +409,45 @@ exports[`Category when the name prop is set to "Testing is reads the siteConfig 
           <p
             className="subtitle is-6"
           >
-            List of tools to help testing
+            GraphQL Scala Libraries
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Sql is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Sql
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            GraphQL SQL Libraries
           </p>
         </div>
       </div>
@@ -562,44 +486,6 @@ exports[`Category when the name prop is set to "Tools is reads the siteConfig an
             className="subtitle is-6"
           >
             Level up your React with tools
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Category when the name prop is set to "Tutorials is reads the siteConfig and uses the configured icon and subtitle 1`] = `
-<div
-  className="category-container column is-one-third"
->
-  <div
-    className="category"
-    onClick={[Function]}
-  >
-    <img
-      alt="icon"
-      src="test-file-stub"
-    />
-    <h2
-      className=" has-text-centered"
-    >
-      Tutorials
-    </h2>
-    <div
-      className="category-content"
-    >
-      <div
-        className="media"
-      >
-        <div
-          className="media-content"
-        >
-          <p
-            className="subtitle is-6"
-          >
-            Learn all things React
           </p>
         </div>
       </div>
