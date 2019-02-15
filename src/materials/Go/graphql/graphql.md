@@ -4,90 +4,46 @@ type: 'GitHub'
 img: './screenshot.png'
 material:
   title: 'graphql'
-  url: 'https://blog.machinebox.io/a-graphql-client-library-for-go-5bffd0455878'
-  github_url: 'https://github.com/machinebox/graphql'
-  subscribers_count: '7'
-  stargazers_count: '326'
-  tags: ['client','godoc','golang','graphql','machinebox','sdk']
-  subtitle: 'Simple low-level GraphQL HTTP client for Go'
-  clone_url: 'https://github.com/machinebox/graphql.git'
-  ssh_url: 'git@github.com:machinebox/graphql.git'
-  pushed_at: '2019-01-30T22:11:31Z'
-  updated_at: '2019-02-10T20:36:09Z'
+  url: 'https://github.com/tmc/graphql'
+  github_url: 'https://github.com/tmc/graphql'
+  subscribers_count: '10'
+  stargazers_count: '49'
+  tags: ['']
+  subtitle: 'graphql parser + utilities'
+  clone_url: 'https://github.com/tmc/graphql.git'
+  ssh_url: 'git@github.com:tmc/graphql.git'
+  pushed_at: '2017-06-02T05:21:03Z'
+  updated_at: '2019-01-31T21:54:39Z'
   author:
-    name: 'machinebox'
-    avatar: 'https://avatars3.githubusercontent.com/u/25792946?v=4'
-    github_url: 'https://github.com/machinebox'
+    name: 'tmc'
+    avatar: 'https://avatars1.githubusercontent.com/u/3977?v=4'
+    github_url: 'https://github.com/tmc'
   latestRelease:
     tag_name: null
     name: null
     url: null
     created_at: null
 ---
-# graphql [![GoDoc](https://godoc.org/github.com/machinebox/graphql?status.png)](http://godoc.org/github.com/machinebox/graphql) [![Build Status](https://travis-ci.org/machinebox/graphql.svg?branch=master)](https://travis-ci.org/machinebox/graphql) [![Go Report Card](https://goreportcard.com/badge/github.com/machinebox/graphql)](https://goreportcard.com/report/github.com/machinebox/graphql)
+graphql
+=======
 
-Low-level GraphQL client for Go.
+utilities for dealing with GraphQL queries in Go.
 
-* Simple, familiar API
-* Respects `context.Context` timeouts and cancellation
-* Build and execute any kind of GraphQL request
-* Use strong Go types for response data
-* Use variables and upload files
-* Simple error handling
+This package focuses on actually creating GraphQL servers and expects you to describe your schema directly in Go.
 
-## Installation
-Make sure you have a working Go environment. To install graphql, simply run:
+To that end this library initially has not emphasized GraphQL schema definition parsing and instead focuses on Query Documents and writing real servers.
 
-```
-$ go get github.com/machinebox/graphql
-```
+license: ISC
 
-## Usage
+version: Based on October2015 GraphQL Specification
 
-```go
-import 'context'
+status: unstable
 
-// create a client (safe to share across requests)
-client := graphql.NewClient('https://machinebox.io/graphql')
+contributions: encouraged
 
-// make a request
-req := graphql.NewRequest(`
-    query ($key: String!) {
-        items (id:$key) {
-            field1
-            field2
-            field3
-        }
-    }
-`)
 
-// set any variables
-req.Var('key', 'value')
+hacking
+=======
 
-// set header fields
-req.Header.Set('Cache-Control', 'no-cache')
-
-// define a Context for the request
-ctx := context.Background()
-
-// run it and capture the response
-var respData ResponseStruct
-if err := client.Run(ctx, req, &respData); err != nil {
-    log.Fatal(err)
-}
-```
-
-### File support via multipart form data
-
-By default, the package will send a JSON body. To enable the sending of files, you can opt to
-use multipart form data instead using the `UseMultipartForm` option when you create your `Client`:
-
-```
-client := graphql.NewClient('https://machinebox.io/graphql', graphql.UseMultipartForm())
-```
-
-For more information, [read the godoc package documentation](http://godoc.org/github.com/machinebox/graphql) or the [blog post](https://blog.machinebox.io/a-graphql-client-library-for-go-5bffd0455878).
-
-## Thanks
-
-Thanks to [Chris Broadfoot](https://github.com/broady) for design help.
+ * go generate ./...
+ * go test ./...
