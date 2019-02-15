@@ -28,6 +28,9 @@ module.exports = {
       Relay: {
         subtitle: 'GraphQL Relay Libraries',
       },
+      Ruby: {
+        subtitle: 'GraphQL Ruby Libraries',
+      },
     },
   },
   plugins: [
