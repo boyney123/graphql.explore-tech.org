@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SiteHeader renders correctly 1`] = `
+<section
+  className="main hero "
+>
+  <div
+    className="hero-body"
+  >
+    <div
+      className="container has-text-centered"
+    >
+      <img
+        alt="logo"
+        src="test-file-stub"
+      />
+      <h1
+        className="title"
+      >
+        graphql.explore-tech.org
+      </h1>
+      <h2
+        className="subtitle"
+      >
+        An open source project to help developers learn, develop & explore.
+      </h2>
+      <a
+        className="button is-medium add-action"
+        href="https://github.com/boyney123/graphql.explore-tech.org/blob/master/CONTRIBUTING.md#adding-a-material-to-the-website"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          className="fab fa-github"
+        />
+        Contribute
+      </a>
+      <p
+        className="mt20"
+      >
+        We have 
+        1
+         resource's for you to explore...
+      </p>
+      <div
+        className="badges"
+      >
+        <a
+          href="https://github.com/boyney123/graphql.explore-tech.org"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="github badge"
+            className="badges__github"
+            src="https://img.shields.io/github/stars/boyney123/graphql.explore-tech.org.svg?style=social"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+`;

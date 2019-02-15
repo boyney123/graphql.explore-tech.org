@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+  .section-header .title {
+    font-size: 2em;
+  }
+  .section-header .subtitle {
+    font-size: 1.5em;
+  }
+}
+
+.section-header .button {
+  margin-bottom: 0;
+}
+
+.section-header .button i {
+  margin-right: 10px;
+}

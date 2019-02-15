@@ -1,0 +1,609 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Category when the name prop is set to "Boilerplates is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Boilerplates
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            Get setup within minutes
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Charts is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Charts
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            Visualise data with React
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Components is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Components
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            List of React components
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Data is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Data
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            Managing data with React
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Developer is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Developer
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            React developer tools & experience
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Examples is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Examples
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            Explore example applications
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Forms is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Forms
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            Hands on with Forms
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Frameworks is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Frameworks
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            React UI Component Frameworks
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Integration is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Integration
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            React integration with others
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Libraries is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Libraries
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            Integrate with great libraries
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Redux is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Redux
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            All things Redux
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Routing is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Routing
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            Routing with React
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Styles is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Styles
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            Making your project look great
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Testing is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Testing
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            List of tools to help testing
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Tools is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Tools
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            Level up your React with tools
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Category when the name prop is set to "Tutorials is reads the siteConfig and uses the configured icon and subtitle 1`] = `
+<div
+  className="category-container column is-one-third"
+>
+  <div
+    className="category"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon"
+      src="test-file-stub"
+    />
+    <h2
+      className=" has-text-centered"
+    >
+      Tutorials
+    </h2>
+    <div
+      className="category-content"
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-content"
+        >
+          <p
+            className="subtitle is-6"
+          >
+            Learn all things React
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

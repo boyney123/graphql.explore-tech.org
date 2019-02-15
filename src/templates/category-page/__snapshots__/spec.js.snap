@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Template matches the snapshot 1`] = `
+<Layout
+  className="blog-post-container"
+  header={
+    <Header
+      contribute={true}
+      subtitle="graphql.explore-tech.org"
+    />
+  }
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+    title="graphql.explore-tech.org"
+  >
+    <script
+      async={true}
+      charset="utf-8"
+      src="https://platform.twitter.com/widgets.js"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      rel="stylesheet"
+    />
+    <html
+      lang="en"
+    />
+  </HelmetWrapper>
+  <div
+    className="container"
+  >
+    <div
+      className="columns"
+    >
+      <div
+        className="column is-one-quarter category-side-bar"
+      >
+        <input
+          className="category-side-bar__search"
+          onChange={[Function]}
+          placeHolder="Filter by name, tags, etc..."
+        />
+        <h5
+          className="category-side-bar__tags__title mt20"
+        >
+          Tags
+        </h5>
+        <ul
+          className="category-side-bar__tags"
+        >
+          <li
+            className="category-side-bar__tag"
+          >
+            random
+             
+            <span>
+              2
+            </span>
+          </li>
+          <li
+            className="category-side-bar__tag"
+          >
+            test
+             
+            <span>
+              2
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="column pt0"
+      >
+        <div
+          className="columns is-multiline"
+        >
+          <Browser
+            author="David"
+            github_url="https://www.github.com/boyney123/testing"
+            image={Object {}}
+            path="/random"
+            subtitle="Random item on the website"
+            title="Random"
+          />
+          <Browser
+            author="David"
+            github_url="https://www.github.com/boyney123/testing"
+            image={Object {}}
+            path="/random-2"
+            subtitle="Another Random item on the website"
+            title="New Title 2"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+`;
