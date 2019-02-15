@@ -4,216 +4,129 @@ type: 'GitHub'
 img: './screenshot.png'
 material:
   title: 'GraphQLBundle'
-  url: 'https://github.com/hoticeking/GraphQLBundle'
-  github_url: 'https://github.com/hoticeking/GraphQLBundle'
-  subscribers_count: '2'
-  stargazers_count: '37'
-  tags: ['']
-  subtitle: 'GraphQL Bundle for Symfony 2.'
-  clone_url: 'https://github.com/hoticeking/GraphQLBundle.git'
-  ssh_url: 'git@github.com:hoticeking/GraphQLBundle.git'
-  pushed_at: '2016-02-13T17:28:04Z'
-  updated_at: '2018-07-20T09:26:32Z'
+  url: 'https://github.com/overblog/GraphQLBundle'
+  github_url: 'https://github.com/overblog/GraphQLBundle'
+  subscribers_count: '39'
+  stargazers_count: '415'
+  tags: ['graphql','graphql-bundle','graphql-php','php','relay','relay-network-layer','symfony','symfony-bundle']
+  subtitle: 'This bundle provides tools to build a complete GraphQL server in your Symfony App.'
+  clone_url: 'https://github.com/overblog/GraphQLBundle.git'
+  ssh_url: 'git@github.com:overblog/GraphQLBundle.git'
+  pushed_at: '2019-01-28T07:14:34Z'
+  updated_at: '2019-02-14T21:15:25Z'
   author:
-    name: 'hoticeking'
-    avatar: 'https://avatars2.githubusercontent.com/u/3687047?v=4'
-    github_url: 'https://github.com/hoticeking'
+    name: 'overblog'
+    avatar: 'https://avatars1.githubusercontent.com/u/7067603?v=4'
+    github_url: 'https://github.com/overblog'
   latestRelease:
-    tag_name: null
-    name: null
-    url: null
-    created_at: null
+    tag_name: 'v0.11.11'
+    name: 'v0.11.11'
+    url: 'https://github.com/overblog/GraphQLBundle/releases/tag/v0.11.11'
+    created_at: '2019-01-14T09:53:23Z'
 ---
-# Symfony 2 GraphQl Bundle
+OverblogGraphQLBundle
+======================
 
-Use Facebook GraphQL with Symfony 2. This library port [laravel-graphql](https://github.com/Folkloreatelier/laravel-graphql).
-It is based on the PHP implementation [here](https://github.com/webonyx/graphql-php). 
+[![Build Status](https://travis-ci.org/overblog/GraphQLBundle.svg?branch=master)](https://travis-ci.org/overblog/GraphQLBundle)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/overblog/GraphQLBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/overblog/GraphQLBundle/?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/overblog/GraphQLBundle/badge.svg?branch=master)](https://coveralls.io/github/overblog/GraphQLBundle?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/overblog/graphql-bundle/version)](https://packagist.org/packages/overblog/graphql-bundle)
+[![Latest Unstable Version](https://poser.pugx.org/overblog/graphql-bundle/v/unstable)](https://packagist.org/packages/overblog/graphql-bundle)
+[![Total Downloads](https://poser.pugx.org/overblog/graphql-bundle/downloads)](https://packagist.org/packages/overblog/graphql-bundle)
 
-## Installation
+This Symfony bundle provides integration of [GraphQL](https://facebook.github.io/graphql/) using [webonyx/graphql-php](https://github.com/webonyx/graphql-php)
+and [GraphQL Relay](https://facebook.github.io/relay/docs/en/graphql-server-specification.html).
+It also supports:
+* batching with [ReactRelayNetworkLayer](https://github.com/nodkz/react-relay-network-layer)
+* batching with [Apollo GraphQL](http://dev.apollodata.com/core/network.html#query-batching).
+* upload and batching upload with [apollo-upload-client](https://github.com/jaydenseric/apollo-upload-client)
 
-**1-** Require the package via Composer in your `composer.json`.
-```json
-{
-	'require': {
-		'suribit/graphql-bundle': '*'
-	}
-}
-```
+Browse your version documentation:
 
-**2-** Run Composer to install or update the new requirement.
+* [0.8  (OBSOLETE)](https://github.com/overblog/GraphQLBundle/blob/0.8/README.md)
+* [0.9  (OBSOLETE)](https://github.com/overblog/GraphQLBundle/blob/0.9/README.md)
+* [0.10 (OBSOLETE)](https://github.com/overblog/GraphQLBundle/blob/0.10/README.md)
+* [0.11 (STABLE)](https://github.com/overblog/GraphQLBundle/blob/0.11/README.md)
+* [0.12 (DEV)](https://github.com/overblog/GraphQLBundle/blob/master/README.md)
 
-```bash
-$ composer install
-```
+[Versions requirements](docs/index.md#versions-requirements)
 
-or
+Documentation
+-------------
 
-```bash
-$ composer update
-```
+- [Quick start](docs/definitions/quick-start.md)
+- [Installation](docs/index.md)
+- [Definitions](docs/definitions/index.md)
+  - [Type System](docs/definitions/type-system/index.md)
+    - [Scalars](docs/definitions/type-system/scalars.md)
+    - [Object](docs/definitions/type-system/object.md)
+    - [Interface](docs/definitions/type-system/interface.md)
+    - [Union](docs/definitions/type-system/union.md)
+    - [Enum](docs/definitions/type-system/enum.md)
+    - [Input Object](docs/definitions/type-system/input-object.md)
+    - [Lists](docs/definitions/type-system/lists.md)
+    - [Non-Null](docs/definitions/type-system/non-null.md)
+  - [Type Inheritance](docs/definitions/type-inheritance.md)
+  - [GraphQL schema language](docs/definitions/graphql-schema-language.md)
+  - [Schema](docs/definitions/schema.md)
+  - [Resolver](docs/definitions/resolver.md)
+  - [Solving N+1 problem](docs/definitions/solving-n-plus-1-problem.md)
+  - [Mutation](docs/definitions/mutation.md)
+  - [Relay](docs/definitions/relay/index.md)
+    - [Connection](docs/definitions/relay/connection.md)
+      - [Relay Pagination helper](docs/helpers/relay-paginator.md)
+    - [Node](docs/definitions/relay/node/index.md)
+      - [Node](docs/definitions/relay/node/node.md)
+      - [Plural](docs/definitions/relay/node/plural.md)
+      - [Global id](docs/definitions/relay/node/global-id.md)
+    - [Mutation](docs/definitions/relay/mutation.md)
+  - [Builders](docs/definitions/builders/index.md)
+    - [Field Builder](docs/definitions/builders/field.md)
+    - [Args Builder](docs/definitions/builders/args.md)
+  - [Expression language](docs/definitions/expression-language.md)
+  - [Debug](docs/definitions/debug/index.md)
+  - [GraphiQL](docs/definitions/graphiql/index.md)
+  - [Upload files](docs/definitions/upload-files.md)
+- [Data fetching](docs/data-fetching/index.md)
+  - [Query batching](docs/data-fetching/batching.md)
+  - [Promise](docs/data-fetching/promise.md)
+- [Security](docs/security/index.md)
+  - [Handle CORS](docs/security/handle-cors.md)
+  - [Object access control](docs/security/object-access-control.md)
+  - [Fields access control](docs/security/fields-access-control.md)
+  - [Fields public control](docs/security/fields-public-control.md)
+  - [Limiting query depth](docs/security/limiting-query-depth.md)
+  - [Query complexity analysis](docs/security/query-complexity-analysis.md)
+  - [Disable introspection](docs/security/disable_introspection.md)
+- [Errors handling](docs/error-handling/index.md)
+- [Events](docs/events/index.md)
 
-**3-** Add the service provider to your `app/AppKernel.php` file
-```php
-<?php
-// app/AppKernel.php
+Talks and slides to help you start
+----------------------------------
 
-// ...
-class AppKernel extends Kernel
-{
-    public function registerBundles()
-    {
-        $bundles = array(
-            // ...
-            new Suribit\GraphQLBundle\GraphQLBundle(),
-        );
+* GraphQL in Symfony *by Bernd Alter* - [Twitter](https://twitter.com/bazoo0815)
+  - [Talk about GraphQL and its implementation with Symfony (26.04.2017)](https://www.slideshare.net/berndalter7/graphql-in-symfony) `English`
+* GraphQL is right in front of us, let's to it! *by Renato Mendes Figueiredo* - [Twitter](https://twitter.com/renatomefi), [GitHub](https://github.com/renatomefi)
+  - [Slides at http://talks.mefi.in/graphql-scotphp17](http://talks.mefi.in/graphql-scotphp17/) `English`
+  - [Video at SymfonyCamp UA 2017](https://www.youtube.com/watch?v=jyoYlnCPNgk) `English`
+  - [Video at DPC 2017](https://www.youtube.com/watch?v=E7MjoCOGSSY) `English`
+* A GraphQL API: From hype to production *by Aurélien David* - [Twitter](https://twitter.com/spyl94), [GitHub](https://github.com/spyl94)
+  - [Slides at https://spyl.net/slides/symfonycon-cluj-2017](https://spyl.net/slides/symfonycon-cluj-2017) `English`
+* Une API GraphQL: du hype à la prod *by Aurélien David* - [Twitter](https://twitter.com/spyl94), [GitHub](https://github.com/spyl94)
+  - [Video at PHPTour 2017 Nantes](https://www.youtube.com/watch?v=xbipW6fgD6c) `French`
+* Introduction to Symfony Flex and setting up OverblogGraphQLBundle with it *by Renato Mendes Figueiredo* - [Twitter](https://twitter.com/renatomefi), [GitHub](https://github.com/renatomefi)
+  - [Slides at http://talks.mefi.in/symfony-flex-101-symfonycampua](http://talks.mefi.in/symfony-flex-101-symfonycampua/) `English`
+  - [Video at Symfony Camp UA 2017](https://www.youtube.com/watch?v=lWweoiCI9Hk) `English`
 
-        // ...
-    }
+Community
+---------
 
-    // ...
-}
-```
+* Get some support on [Symfony devs Slack](https://symfony.com/slack-invite)
+  on the dedicated channel **overblog-graphql**.
+* Follow us on [GitHub](https://github.com/overblog)
 
-**4-** Create Type `src/path your bundle/Types/Country.php`
-```php
-<?php
+Contributing
+------------
 
-namespace Lgck\GraphQlBundle\Types;
-
-use GraphQL\Type\Definition\Type as TypeBase;
-use Suribit\GraphQLBundle\Support\Type;
-
-class Country extends Type
-{
-    protected $attributes = [
-        'name' => 'Country',
-        'description' => 'A Country'
-    ];
-
-    public function fields()
-    {
-        return [
-            'id' => [
-                'type' => TypeBase::nonNull(TypeBase::int()),
-                'description' => 'The id of the country'
-            ],
-            'name' => [
-                'type' => TypeBase::string(),
-                'description' => 'The name of country'
-            ],
-            'status' => [
-                'type' => TypeBase::int(),
-                'description' => 'The status of country'
-            ]
-        ];
-    }
-}
-
-```
-
-**5-** Create Query `src/path your bundle/Queries/Country.php`
-```php
-<?php
-
-namespace Lgck\GraphQlBundle\Queries;
-
-use GraphQL\Type\Definition\Type;
-use Suribit\GraphQLBundle\Support\Query;
-
-class Country extends Query
-{
-    protected $attributes = [
-        'name' => 'Country query'
-    ];
-
-    public function type()
-    {
-        return $this->manager->type('country');
-    }
-
-    public function args()
-    {
-        return [
-            'id' => ['name' => 'id', 'type' => Type::int()],
-        ];
-    }
-
-    public function resolve($root, $args)
-    {
-        $em = $this->manager->em;   // Doctrine Entity Manager
-        return [
-            'id' => `,
-            'name' => 'Russia',
-            'status' => 1
-        ];
-    }
-}
-```
-
-**6-** Create config for graphql schema `src/path your bundle/Resources/config/graphql.yml`
-```yaml
-types:
-  country: 'Lgck\GraphQlBundle\Types\Country'
-
-schema:
-  query:
-    country: 'Lgck\GraphQlBundle\Queries\Country'
-
-  mutation: []
-```
-
-**7-** Edit the file `src/path your bundle/Resources/config/services.yml`
-```yaml
-services:
-    lgck_graph_ql.mapping.driver.yaml:
-        public: true
-        class: Suribit\GraphQLBundle\ConfigDrivers\Yaml\YamlDriver
-        arguments:
-            - '%kernel.root_dir%/../src/path your bundle/Resources/config/graphql.yml'
-
-    lgck_graph_ql.manager:
-        class: Suribit\GraphQLBundle\GraphQL
-        arguments:
-            - @doctrine.orm.entity_manager
-            - @lgck_graph_ql.mapping.driver.yaml
-```
-
-**8-** Create a controller that will be the starting point for processing the request
-```php
-<?php
-
-// ...
-
-class MainController extends Controller
-{
-    public function queryAction(Request $request)
-    {
-        $manager = $this->get('lgck_graph_ql.manager');
-        $query = $request->request->get('query');
-        try {
-            $data = $manager->query($query);
-        } catch (QueryException $e) {
-            $response = new JsonResponse($e->getErrors(), 500);
-            return $response;
-        }
-
-        $response = new JsonResponse($data);
-        return $response;
-    }
-}    
-```
-
-**9-** Now it is possible to send a data request
-```graphql
-query FooBar {
-  country(id: 1) {
-    id, 
-    name, 
-    status 
-  }
-}
-```
-
-TODO:
-1. Add the complete documentation
-2. Add validation
+* [See contributing documentation](CONTRIBUTING.md)
+* [Thanks to all contributors](https://github.com/overblog/GraphQLBundle/graphs/contributors)
