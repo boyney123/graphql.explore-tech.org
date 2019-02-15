@@ -57,6 +57,9 @@ module.exports = {
         title: 'SQL',
         subtitle: 'GraphQL SQL Libraries',
       },
+      Examples: {
+        subtitle: 'Example Projects using GraphQL',
+      },
     },
   },
   plugins: [

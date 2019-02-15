@@ -46,7 +46,8 @@
     "add:scala": "node src/scripts/create-material/index.js Scala",
     "add:dotnet": "node src/scripts/create-material/index.js Dotnet",
     "add:elixir": "node src/scripts/create-material/index.js Elixir",
-    "add:sql": "node src/scripts/create-material/index.js Sql"
+    "add:sql": "node src/scripts/create-material/index.js Sql",
+    "add:examples": "node src/scripts/create-material/index.js Examples"
   },
   "devDependencies": {
     "babel-jest": "^24.1.0",
