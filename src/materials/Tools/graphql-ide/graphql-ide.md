@@ -8,8 +8,8 @@ material:
   github_url: 'https://github.com/andev-software/graphql-ide'
   subscribers_count: '18'
   stargazers_count: '791'
-  tags: ['graphiql','graphql']
-  subtitle: '⚡️ GraphQL IDE - An extensive IDE for exploring GraphQL API's'
+  tags: ['graphiql', 'graphql']
+  subtitle: '⚡️ GraphQL IDE - An extensive IDE for exploring GraphQL APIs'
   clone_url: 'https://github.com/andev-software/graphql-ide.git'
   ssh_url: 'git@github.com:andev-software/graphql-ide.git'
   pushed_at: '2018-07-24T15:41:15Z'
@@ -24,6 +24,7 @@ material:
     url: 'https://github.com/andev-software/graphql-ide/releases/tag/v1.1.1'
     created_at: '2017-09-17T20:01:49Z'
 ---
+
 <p align='center'>
     <img alt='GraphQL IDE' src='https://rawgit.com/redound/graphql-ide/cbb88aa/assets/logo.svg' width='440'>
 </p>
@@ -53,11 +54,11 @@ Unpack the latest app from the [releases][0] tab
 
 Releases available soon, for now build the binary using
 
-````
+```
 npm install -g electron
 npm install
 npm run package --all
-````
+```
 
 Run the binary using `electron .`
 

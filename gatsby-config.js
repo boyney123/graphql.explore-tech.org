@@ -19,53 +19,11 @@ module.exports = {
     contributionUrl: '',
 
     categories: {
-      Components: {
-        subtitle: 'List of React components',
-      },
-      Forms: {
-        subtitle: 'Hands on with Forms',
-      },
-      Data: {
-        subtitle: 'Managing data with React',
-      },
-      Tutorials: {
-        subtitle: 'Learn all things React',
-      },
-      Developer: {
-        subtitle: 'React developer tools & experience',
-      },
-      Redux: {
-        subtitle: 'All things Redux',
-      },
-      Charts: {
-        subtitle: 'Visualise data with React',
-      },
-      Integration: {
-        subtitle: 'React integration with others',
-      },
-      Styles: {
-        subtitle: 'Making your project look great',
-      },
-      Boilerplates: {
-        subtitle: 'Get setup within minutes',
-      },
-      Testing: {
-        subtitle: 'List of tools to help testing',
-      },
       Tools: {
         subtitle: 'Level up your React with tools',
       },
-      Routing: {
-        subtitle: 'Routing with React',
-      },
-      Libraries: {
-        subtitle: 'Integrate with great libraries',
-      },
-      Examples: {
-        subtitle: 'Explore example applications',
-      },
-      Frameworks: {
-        subtitle: 'React UI Component Frameworks',
+      JavaScript: {
+        subtitle: 'GraphQL JavaScript Libraries',
       },
     },
   },

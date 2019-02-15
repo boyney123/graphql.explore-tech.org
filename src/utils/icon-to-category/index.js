@@ -17,20 +17,6 @@ import charts from '../../icons/charts.svg'
 import frameworks from '../../icons/ui-frameworks.svg'
 
 export default {
-  Tutorials: tutorial,
-  Components: bricks,
   Tools: hammer,
-  Styles: styles,
-  Boilerplates: tools,
-  Data: data,
-  Routing: routing,
-  Redux: redux,
-  Charts: charts,
-  Integration: integration,
-  Developer: devtools,
-  Libraries: library,
-  Testing: testing,
-  Forms: form,
-  Examples: example,
-  Frameworks: frameworks,
+  JavaScript: frameworks,
 }
