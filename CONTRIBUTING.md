@@ -20,77 +20,57 @@ You can easily add a material to the website. Here is a small list of things to 
 
 ## Commands to add materials
 
-### Adding a new component
+### Adding a tool
 
 `npm run add:components {GITHUB_URL}`
 
-### Adding a tutorial
+### Adding a JavaScript lib
 
-`npm run add:tutorial {GITHUB_URL}`
+`npm run add:js-lib {GITHUB_URL}`
 
-### Adding a test resource
+### Adding a relay lib
 
-`npm run add:test {GITHUB_URL}`
+`npm run add:relay {GITHUB_URL}`
 
-### Adding an example project
+### Adding an ruby project
+
+`npm run add:ruby {GITHUB_URL}`
+
+### Adding a php resource
+
+`npm run add:php {GITHUB_URL}`
+
+### Adding a python resource
+
+`npm run add:python {GITHUB_URL}`
+
+### Adding a java resource
+
+`npm run add:java {GITHUB_URL}`
+
+### Adding a go resource
+
+`npm run add:go {GITHUB_URL}`
+
+### Adding a scala resource
+
+`npm run add:scala {GITHUB_URL}`
+
+### Adding a dotnet resource
+
+`npm run add:dotnet {GITHUB_URL}`
+
+### Adding a elixir resource
+
+`npm run add:elixir {GITHUB_URL}`
+
+### Adding a sql
+
+`npm run add:sql {GITHUB_URL}`
+
+### Adding an example
 
 `npm run add:example {GITHUB_URL}`
-
-### Adding a tool resource
-
-`npm run add:tool {GITHUB_URL}`
-
-### Adding a redux resource
-
-`npm run add:redux {GITHUB_URL}`
-
-### Adding a chart resource
-
-`npm run add:chart {GITHUB_URL}`
-
-### Adding a integration resource
-
-`npm run add:integration {GITHUB_URL}`
-
-### Adding a dev-tool resource
-
-`npm run add:dev-tool {GITHUB_URL}`
-
-### Adding a data resource
-
-`npm run add:data {GITHUB_URL}`
-
-### Adding a style resource
-
-`npm run add:style {GITHUB_URL}`
-
-### Adding a boilerplate
-
-`npm run add:boilerplate {GITHUB_URL}`
-
-### Adding a router resource
-
-`npm run add:router {GITHUB_URL}`
-
-### Adding a form resource
-
-`npm run add:form {GITHUB_URL}`
-
-### Adding a lib resource
-
-`npm run add:lib {GITHUB_URL}`
-
-## Supported Categories
-
-- Boilerplates
-- Components
-- Forms
-- Tutorials
-- Tools
-- Testing
-- Styles
-
-Take a look at the commands you can run https://github.com/boyney123/graphql.explore-tech.org/blob/0b246c86909894e858c4125c6f159b75b9c0953a/package.json#L38
 
 ## Adding a new Category
 
