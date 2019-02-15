@@ -4,6 +4,7 @@
 
 .material__container {
   max-width: 80%;
+  color: #000000;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,6 +44,7 @@
   box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.28);
   margin-bottom: 32px;
   padding: 20px;
+  background: white;
 }
 
 .side-bar .side-bar-item {

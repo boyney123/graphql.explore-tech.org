@@ -746,7 +746,7 @@ h4 {
 }
 
 .main .subtitle {
-  color: #1d609e;
+  color: #ffffff;
   font-size: 2rem;
   margin-bottom: 0 !important;
 }
@@ -782,4 +782,8 @@ h4 {
   .container {
     padding: 40px;
   }
+}
+
+.content {
+  margin-bottom: 0 !important;
 }
