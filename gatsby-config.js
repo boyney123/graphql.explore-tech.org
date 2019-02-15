@@ -53,6 +53,10 @@ module.exports = {
       Elixir: {
         subtitle: 'GraphQL Elixir Libraries',
       },
+      Sql: {
+        title: 'SQL',
+        subtitle: 'GraphQL SQL Libraries',
+      },
     },
   },
   plugins: [

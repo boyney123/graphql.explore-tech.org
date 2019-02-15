@@ -9,7 +9,7 @@ material:
   subscribers_count: '8'
   stargazers_count: '37'
   tags: ['graphql','microservices','service-discovery','vertx','vertx-service-discovery']
-  subtitle: 'Service discovery and querying of GraphQL schema's in Vert.x based microservices'
+  subtitle: 'Service discovery and querying of GraphQL schemas in Vert.x based microservices'
   clone_url: 'https://github.com/engagingspaces/vertx-graphql-service-discovery.git'
   ssh_url: 'git@github.com:engagingspaces/vertx-graphql-service-discovery.git'
   pushed_at: '2017-10-15T17:16:52Z'
