@@ -1,9 +1,9 @@
 .category {
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   padding: 30px;
   display: flex;
   flex-direction: column;
   width: 100%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 32px rgba(0, 0, 0, 0.12);
   /* min-height: 300px; */
 
   /* display: flex; */

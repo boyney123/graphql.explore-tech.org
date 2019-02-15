@@ -200,12 +200,12 @@ export const pageQuery = graphql`
           clone_url
           ssh_url
           pushed_at(formatString: "MMMM Do YYYY")
-          latestRelease {
-            tag_name
-            name
-            url
-            created_at(formatString: "MMMM Do YYYY")
-          }
+          # latestRelease {
+          #   tag_name
+          #   name
+          #   url
+          #   created_at(formatString: "MMMM Do YYYY")
+          # }
         }
       }
     }

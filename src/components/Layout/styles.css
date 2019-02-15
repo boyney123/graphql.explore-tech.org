@@ -710,8 +710,30 @@ pre tt:after {
 
 .main.hero {
   background-color: #2b2e3b; /* fallback for old browsers */
-  color: #74b1be;
+  color: #e10098;
   background: #2b2e3b url(../../images/bg.png) fixed;
+}
+
+.content {
+  color: white;
+  background: #f5f6f8;
+}
+
+.main.hero .button {
+  background: none;
+  color: white;
+}
+
+.main.hero .button:hover {
+  color: #202020;
+  background: white;
+}
+
+.content h1,
+h2,
+h3,
+h4 {
+  color: white;
 }
 
 .main img {
@@ -724,7 +746,7 @@ pre tt:after {
 }
 
 .main .subtitle {
-  color: #fff;
+  color: #1d609e;
   font-size: 2rem;
   margin-bottom: 0 !important;
 }
