@@ -40,6 +40,9 @@ module.exports = {
       Java: {
         subtitle: 'GraphQL Java Libraries',
       },
+      Go: {
+        subtitle: 'GraphQL Go Libraries',
+      },
     },
   },
   plugins: [
