@@ -12,7 +12,7 @@ material:
   subtitle: ':rocket: A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server'
   clone_url: 'https://github.com/apollographql/apollo-client.git'
   ssh_url: 'git@github.com:apollographql/apollo-client.git'
-  pushed_at: '2019-02-15T14:28:42Z'
+  pushed_at: '2019-02-15T14:35:41Z'
   updated_at: '2019-02-15T14:24:04Z'
   author:
     name: 'apollographql'
