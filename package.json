@@ -44,7 +44,8 @@
     "add:java": "node src/scripts/create-material/index.js Java",
     "add:go": "node src/scripts/create-material/index.js Go",
     "add:scala": "node src/scripts/create-material/index.js Scala",
-    "add:dotnet": "node src/scripts/create-material/index.js Dotnet"
+    "add:dotnet": "node src/scripts/create-material/index.js Dotnet",
+    "add:elixir": "node src/scripts/create-material/index.js Elixir"
   },
   "devDependencies": {
     "babel-jest": "^24.1.0",

@@ -50,6 +50,9 @@ module.exports = {
         title: '.NET',
         subtitle: 'GraphQL .NET Libraries',
       },
+      Elixir: {
+        subtitle: 'GraphQL Elixir Libraries',
+      },
     },
   },
   plugins: [
