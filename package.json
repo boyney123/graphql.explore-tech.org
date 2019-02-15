@@ -35,9 +35,9 @@
     "test": "npm run generate:materials-test-file && NODE_ENV=test jest --coverage --silent",
     "test:watch": "npm run generate:materials-test-file && NODE_ENV=test jest --watch --notify --notifyMode=change",
     "generate:materials-test-file": "node src/scripts/utils/generate-material-test-file.js",
-    "add:tutorial": "node src/scripts/create-material/index.js Tutorials",
     "add:tool": "node src/scripts/create-material/index.js Tools",
-    "add:js-lib": "node src/scripts/create-material/index.js Javascript"
+    "add:js-lib": "node src/scripts/create-material/index.js Javascript",
+    "add:relay": "node src/scripts/create-material/index.js Relay"
   },
   "devDependencies": {
     "babel-jest": "^24.1.0",

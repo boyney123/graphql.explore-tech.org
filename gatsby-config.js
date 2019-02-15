@@ -25,6 +25,9 @@ module.exports = {
       Javascript: {
         subtitle: 'GraphQL JavaScript Libraries',
       },
+      Relay: {
+        subtitle: 'GraphQL Relay Libraries',
+      },
     },
   },
   plugins: [
