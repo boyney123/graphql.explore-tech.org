@@ -4,129 +4,270 @@ type: 'GitHub'
 img: './screenshot.png'
 material:
   title: 'GraphQLBundle'
-  url: 'https://github.com/overblog/GraphQLBundle'
-  github_url: 'https://github.com/overblog/GraphQLBundle'
-  subscribers_count: '39'
-  stargazers_count: '415'
-  tags: ['graphql','graphql-bundle','graphql-php','php','relay','relay-network-layer','symfony','symfony-bundle']
-  subtitle: 'This bundle provides tools to build a complete GraphQL server in your Symfony App.'
-  clone_url: 'https://github.com/overblog/GraphQLBundle.git'
-  ssh_url: 'git@github.com:overblog/GraphQLBundle.git'
-  pushed_at: '2019-01-28T07:14:34Z'
-  updated_at: '2019-02-14T21:15:25Z'
+  url: 'https://github.com/youshido-php/GraphQLBundle'
+  github_url: 'https://github.com/youshido-php/GraphQLBundle'
+  subscribers_count: '15'
+  stargazers_count: '285'
+  tags: ['']
+  subtitle: 'Pure PHP implementation of GraphQL Server – Symfony Bundle'
+  clone_url: 'https://github.com/youshido-php/GraphQLBundle.git'
+  ssh_url: 'git@github.com:youshido-php/GraphQLBundle.git'
+  pushed_at: '2018-03-08T10:14:03Z'
+  updated_at: '2019-01-28T14:07:58Z'
   author:
-    name: 'overblog'
-    avatar: 'https://avatars1.githubusercontent.com/u/7067603?v=4'
-    github_url: 'https://github.com/overblog'
+    name: 'youshido-php'
+    avatar: 'https://avatars2.githubusercontent.com/u/5954642?v=4'
+    github_url: 'https://github.com/youshido-php'
   latestRelease:
-    tag_name: 'v0.11.11'
-    name: 'v0.11.11'
-    url: 'https://github.com/overblog/GraphQLBundle/releases/tag/v0.11.11'
-    created_at: '2019-01-14T09:53:23Z'
+    tag_name: 'v1.3.4'
+    name: 'v1.3.4'
+    url: 'https://github.com/youshido-php/GraphQLBundle/releases/tag/v1.3.4'
+    created_at: '2017-06-17T00:57:25Z'
 ---
-OverblogGraphQLBundle
-======================
+# Symfony GraphQl Bundle
 
-[![Build Status](https://travis-ci.org/overblog/GraphQLBundle.svg?branch=master)](https://travis-ci.org/overblog/GraphQLBundle)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/overblog/GraphQLBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/overblog/GraphQLBundle/?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/overblog/GraphQLBundle/badge.svg?branch=master)](https://coveralls.io/github/overblog/GraphQLBundle?branch=master)
-[![Latest Stable Version](https://poser.pugx.org/overblog/graphql-bundle/version)](https://packagist.org/packages/overblog/graphql-bundle)
-[![Latest Unstable Version](https://poser.pugx.org/overblog/graphql-bundle/v/unstable)](https://packagist.org/packages/overblog/graphql-bundle)
-[![Total Downloads](https://poser.pugx.org/overblog/graphql-bundle/downloads)](https://packagist.org/packages/overblog/graphql-bundle)
+### This is a bundle based on the pure [PHP GraphQL Server](http://github.com/youshido/graphql/) implementation
 
-This Symfony bundle provides integration of [GraphQL](https://facebook.github.io/graphql/) using [webonyx/graphql-php](https://github.com/webonyx/graphql-php)
-and [GraphQL Relay](https://facebook.github.io/relay/docs/en/graphql-server-specification.html).
-It also supports:
-* batching with [ReactRelayNetworkLayer](https://github.com/nodkz/react-relay-network-layer)
-* batching with [Apollo GraphQL](http://dev.apollodata.com/core/network.html#query-batching).
-* upload and batching upload with [apollo-upload-client](https://github.com/jaydenseric/apollo-upload-client)
+This bundle provides you with:
 
-Browse your version documentation:
+ * Full compatibility with the [RFC Specification for GraphQL](https://facebook.github.io/graphql/)
+ * Agile object oriented structure to architect your GraphQL Schema
+ * Intuitive Type system that allows you to build your project much faster and stay consistent
+ * Built-in validation for the GraphQL Schema you develop
+ * Well documented classes with a lot of examples
+ * Automatically created endpoint /graphql to handle requests
 
-* [0.8  (OBSOLETE)](https://github.com/overblog/GraphQLBundle/blob/0.8/README.md)
-* [0.9  (OBSOLETE)](https://github.com/overblog/GraphQLBundle/blob/0.9/README.md)
-* [0.10 (OBSOLETE)](https://github.com/overblog/GraphQLBundle/blob/0.10/README.md)
-* [0.11 (STABLE)](https://github.com/overblog/GraphQLBundle/blob/0.11/README.md)
-* [0.12 (DEV)](https://github.com/overblog/GraphQLBundle/blob/master/README.md)
+**There are simple demo application to demonstrate how we build our API, see [GraphQLDemoApp](https://github.com/Youshido/GraphQLDemoApp).**
 
-[Versions requirements](docs/index.md#versions-requirements)
+## Table of Contents
 
-Documentation
--------------
+ * [Installation](#installation)
+ * [Symfony features included](#symfony-features-included)
+    * [AbstractContainerAwareField class](#class-abstractcontainerawarefield)
+    * [Service method as callable](#service-method-as-callable)
+    * [Security](#security)
+ * [Documentation](#documentation)
 
-- [Quick start](docs/definitions/quick-start.md)
-- [Installation](docs/index.md)
-- [Definitions](docs/definitions/index.md)
-  - [Type System](docs/definitions/type-system/index.md)
-    - [Scalars](docs/definitions/type-system/scalars.md)
-    - [Object](docs/definitions/type-system/object.md)
-    - [Interface](docs/definitions/type-system/interface.md)
-    - [Union](docs/definitions/type-system/union.md)
-    - [Enum](docs/definitions/type-system/enum.md)
-    - [Input Object](docs/definitions/type-system/input-object.md)
-    - [Lists](docs/definitions/type-system/lists.md)
-    - [Non-Null](docs/definitions/type-system/non-null.md)
-  - [Type Inheritance](docs/definitions/type-inheritance.md)
-  - [GraphQL schema language](docs/definitions/graphql-schema-language.md)
-  - [Schema](docs/definitions/schema.md)
-  - [Resolver](docs/definitions/resolver.md)
-  - [Solving N+1 problem](docs/definitions/solving-n-plus-1-problem.md)
-  - [Mutation](docs/definitions/mutation.md)
-  - [Relay](docs/definitions/relay/index.md)
-    - [Connection](docs/definitions/relay/connection.md)
-      - [Relay Pagination helper](docs/helpers/relay-paginator.md)
-    - [Node](docs/definitions/relay/node/index.md)
-      - [Node](docs/definitions/relay/node/node.md)
-      - [Plural](docs/definitions/relay/node/plural.md)
-      - [Global id](docs/definitions/relay/node/global-id.md)
-    - [Mutation](docs/definitions/relay/mutation.md)
-  - [Builders](docs/definitions/builders/index.md)
-    - [Field Builder](docs/definitions/builders/field.md)
-    - [Args Builder](docs/definitions/builders/args.md)
-  - [Expression language](docs/definitions/expression-language.md)
-  - [Debug](docs/definitions/debug/index.md)
-  - [GraphiQL](docs/definitions/graphiql/index.md)
-  - [Upload files](docs/definitions/upload-files.md)
-- [Data fetching](docs/data-fetching/index.md)
-  - [Query batching](docs/data-fetching/batching.md)
-  - [Promise](docs/data-fetching/promise.md)
-- [Security](docs/security/index.md)
-  - [Handle CORS](docs/security/handle-cors.md)
-  - [Object access control](docs/security/object-access-control.md)
-  - [Fields access control](docs/security/fields-access-control.md)
-  - [Fields public control](docs/security/fields-public-control.md)
-  - [Limiting query depth](docs/security/limiting-query-depth.md)
-  - [Query complexity analysis](docs/security/query-complexity-analysis.md)
-  - [Disable introspection](docs/security/disable_introspection.md)
-- [Errors handling](docs/error-handling/index.md)
-- [Events](docs/events/index.md)
 
-Talks and slides to help you start
-----------------------------------
+## Installation
 
-* GraphQL in Symfony *by Bernd Alter* - [Twitter](https://twitter.com/bazoo0815)
-  - [Talk about GraphQL and its implementation with Symfony (26.04.2017)](https://www.slideshare.net/berndalter7/graphql-in-symfony) `English`
-* GraphQL is right in front of us, let's to it! *by Renato Mendes Figueiredo* - [Twitter](https://twitter.com/renatomefi), [GitHub](https://github.com/renatomefi)
-  - [Slides at http://talks.mefi.in/graphql-scotphp17](http://talks.mefi.in/graphql-scotphp17/) `English`
-  - [Video at SymfonyCamp UA 2017](https://www.youtube.com/watch?v=jyoYlnCPNgk) `English`
-  - [Video at DPC 2017](https://www.youtube.com/watch?v=E7MjoCOGSSY) `English`
-* A GraphQL API: From hype to production *by Aurélien David* - [Twitter](https://twitter.com/spyl94), [GitHub](https://github.com/spyl94)
-  - [Slides at https://spyl.net/slides/symfonycon-cluj-2017](https://spyl.net/slides/symfonycon-cluj-2017) `English`
-* Une API GraphQL: du hype à la prod *by Aurélien David* - [Twitter](https://twitter.com/spyl94), [GitHub](https://github.com/spyl94)
-  - [Video at PHPTour 2017 Nantes](https://www.youtube.com/watch?v=xbipW6fgD6c) `French`
-* Introduction to Symfony Flex and setting up OverblogGraphQLBundle with it *by Renato Mendes Figueiredo* - [Twitter](https://twitter.com/renatomefi), [GitHub](https://github.com/renatomefi)
-  - [Slides at http://talks.mefi.in/symfony-flex-101-symfonycampua](http://talks.mefi.in/symfony-flex-101-symfonycampua/) `English`
-  - [Video at Symfony Camp UA 2017](https://www.youtube.com/watch?v=lWweoiCI9Hk) `English`
+We assume you have `composer`, if you're not – install it from the [official website](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).  
+If you need any help installing Symfony framework – here's the link [http://symfony.com/doc/current/book/installation.html](http://symfony.com/doc/current/book/installation.html).
+> Shortcut to install Symfony: `composer create-project symfony/framework-standard-edition my_project_name`
 
-Community
----------
+Once you have your composer up and running – you're ready to install the GraphQL Bundle.   
+Go to your project folder and run:
+```sh
+composer require youshido/graphql-bundle
+```
 
-* Get some support on [Symfony devs Slack](https://symfony.com/slack-invite)
-  on the dedicated channel **overblog-graphql**.
-* Follow us on [GitHub](https://github.com/overblog)
+Then enable bundle in your `app/AppKernel.php`
+```php
+new Youshido\GraphQLBundle\GraphQLBundle(),
+```
 
-Contributing
-------------
+Add the routing reference to the `app/config/routing.yml`:
+```yaml
+graphql:
+    resource: '@GraphQLBundle/Controller/'
+```
+or 
+```yaml
+graphql:
+    resource: '@GraphQLBundle/Resources/config/route.xml'
+```
+If you don't have a web server configured you can use a bundled version, simply run `php bin/console server:run`.
 
-* [See contributing documentation](CONTRIBUTING.md)
-* [Thanks to all contributors](https://github.com/overblog/GraphQLBundle/graphs/contributors)
+Let's check if you've done everything right so far – try to access url `localhost:8000/graphql`.  
+You should get a JSON response with the following error:
+```js
+{'errors':[{'message':'Schema class does not exist'}]}
+```
+
+That's because there was no GraphQL Schema specified for the processor yet. You need to create a GraphQL Schema class and set it inside your `app/config/config.yml` file.
+
+> There is a way where you can use inline approach and do not create a Schema class, in order to do that you have to define your own GraphQL controller and use a `->setSchema` method of the processor to set the Schema.  
+
+The fastest way to create a Schema class is to use a generator shipped with this bundle:
+```sh
+php bin/console graphql:configure AppBundle
+```
+Here *AppBundle* is a name of the bundle where the class will be generated in.  
+You will be requested for a confirmation to create a class.
+ 
+After you've added parameters to the config file, try to access the following link in the browser – `http://localhost:8000/graphql?query={hello(name:World)}`
+
+> Alternatively, you can execute the same request using CURL client in your console  
+> `curl http://localhost:8000/graphql --data 'query={ hello(name: \'World\') }'`
+
+Successful response from a test Schema will be displayed:
+```js
+{'data':{'hello':'world!'}}
+```
+
+That means you have GraphQL Bundle for the Symfony Framework configured and now can architect your GraphQL Schema:
+
+Next step would be to link assets for GraphiQL Explorer by executing:
+```sh
+php bin/console assets:install --symlink
+```
+Now you can access it at `http://localhost:8000/graphql/explorer`
+
+## Symfony features
+### Class AbstractContainerAwareField:
+AbstractContainerAwareField class used for auto passing container to field, add ability to use container in resolve function:
+```php
+class RootDirField extends AbstractContainerAwareField
+{
+
+    /**
+     * @inheritdoc
+     */
+    public function getType()
+    {
+        return new StringType();
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function resolve($value, array $args, ResolveInfo $info)
+    {
+        return $this->container->getParameter('kernel.root_dir');
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function getName()
+    {
+        return 'rootDir';
+    }
+```
+
+### Service method as callable:
+Ability to pass service method as resolve callable:
+```php
+$config->addField(new Field([
+    'name'    => 'cacheDir',
+    'type'    => new StringType(),
+    'resolve' => ['@resolve_service', 'getCacheDir']
+]))
+```
+### Events:
+You can use the Symfony Event Dispatcher to get control over specific events which happen when resolving graphql queries.
+
+```php
+namespace ...\...\..;
+
+use Youshido\GraphQL\Event\ResolveEvent;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+
+class MyGraphQLResolveEventSubscriber implements EventSubscriberInterface
+{
+    public static function getSubscribedEvents()
+    {
+        return [
+            'graphql.pre_resolve'  => 'onPreResolve',
+            'graphql.post_resolve' => 'onPostResolve'
+        ];
+    }
+
+    public function onPreResolve(ResolveEvent $event)
+    {
+		//$event->getFields / $event->getAstFields()..
+    }
+
+    public function onPostResolve(ResolveEvent $event)
+    {
+		//$event->getFields / $event->getAstFields()..
+    }
+}
+```
+#### Configuration
+
+Now configure you subscriber so events will be caught. This can be done in Symfony by either XML, Yaml or PHP.
+
+```xml
+<service id='my_own_bundle.event_subscriber.my_graphql_resolve_event_subscriber' class='...\...\...\MyGraphQLResolveEventSubscriber'>
+	<tag name='graphql.event_subscriber' />
+</service>
+```
+
+### Security:
+Bundle provides two ways to guard your application: using black/white operation list or using security voter.
+
+#### Black/white list
+Used to guard some root operations. To enable it you need to write following in your config.yml file:
+```yaml
+graphql:
+
+  #...
+
+  security:
+    black_list: ['hello'] # or white_list: ['hello']
+
+```
+#### Using security voter:
+Used to guard any field resolve and support two types of guards: root operation and any other field resolving (including internal fields, scalar type fields, root operations). To guard root operation with your specified logic you need to enable it in configuration and use  `SecurityManagerInterface::RESOLVE_ROOT_OPERATION_ATTRIBUTE` attribute. The same things need to do to enable field guard, but in this case use `SecurityManagerInterface::RESOLVE_FIELD_ATTRIBUTE` attribute.
+[Official documentation](http://symfony.com/doc/current/security/voters.html) about voters.
+
+> Note: Enabling field security lead to a significant reduction in performance
+
+Config example:
+```yaml
+graphql:
+    security:
+        guard:
+            field: true # for any field security
+            operation: true # for root level security
+```
+
+Voter example (add in to your `services.yml` file with tag `security.voter`):
+```php
+use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+use Symfony\Component\Security\Core\Authorization\Voter\Voter;
+use Youshido\GraphQL\Execution\ResolveInfo;
+use Youshido\GraphQLBundle\Security\Manager\SecurityManagerInterface;
+
+class GraphQLVoter extends Voter
+{
+
+    /**
+     * @inheritdoc
+     */
+    protected function supports($attribute, $subject)
+    {
+        return in_array($attribute, [SecurityManagerInterface::RESOLVE_FIELD_ATTRIBUTE, SecurityManagerInterface::RESOLVE_ROOT_OPERATION_ATTRIBUTE]);
+    }
+
+    /**
+     * @inheritdoc
+     */
+    protected function voteOnAttribute($attribute, $subject, TokenInterface $token)
+    {
+        // your own validation logic here
+
+        if (SecurityManagerInterface::RESOLVE_FIELD_ATTRIBUTE == $attribute) {
+            /** @var $subject ResolveInfo */
+            if ($subject->getField()->getName() == 'hello') {
+                return false;
+            }
+
+            return true;
+        } elseif (SecurityManagerInterface::RESOLVE_ROOT_OPERATION_ATTRIBUTE == $attribute) {
+            /** @var $subject Query */
+            if ($subject->getName() == '__schema') {
+                return true;
+            }
+        }
+    }
+}
+```
+
+
+## GraphiQL extension:
+To run [graphiql extension](https://github.com/graphql/graphiql) just try to access to `http://your_domain/graphql/explorer`
+
+## Documentation
+All detailed documentation is available on the main GraphQL repository – http://github.com/youshido/graphql/.
