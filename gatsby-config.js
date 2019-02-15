@@ -46,6 +46,10 @@ module.exports = {
       Scala: {
         subtitle: 'GraphQL Scala Libraries',
       },
+      Dotnet: {
+        title: '.NET',
+        subtitle: 'GraphQL .NET Libraries',
+      },
     },
   },
   plugins: [

@@ -43,7 +43,8 @@
     "add:python": "node src/scripts/create-material/index.js Python",
     "add:java": "node src/scripts/create-material/index.js Java",
     "add:go": "node src/scripts/create-material/index.js Go",
-    "add:scala": "node src/scripts/create-material/index.js Scala"
+    "add:scala": "node src/scripts/create-material/index.js Scala",
+    "add:dotnet": "node src/scripts/create-material/index.js Dotnet"
   },
   "devDependencies": {
     "babel-jest": "^24.1.0",
