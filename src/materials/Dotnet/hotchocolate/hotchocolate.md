@@ -1,0 +1,235 @@
+---
+path: '/materials/hotchocolate'
+type: 'GitHub'
+img: './screenshot.png'
+material:
+  title: 'hotchocolate'
+  url: 'https://hotchocolate.io'
+  github_url: 'https://github.com/ChilliCream/hotchocolate'
+  subscribers_count: '17'
+  stargazers_count: '253'
+  tags: ['asp-net','asp-net-core','c-sharp','dotnet','dotnet-core','facebook','graphql','graphql-dotnet','graphql-parser','graphql-schema','graphql-schema-stitching','graphql-server','graphql-syntax','hotchocolate','resolver','schema-stitching']
+  subtitle: 'Hot Chocolate is a GraphQL server, written in C# for .Net Core and .Net Framework'
+  clone_url: 'https://github.com/ChilliCream/hotchocolate.git'
+  ssh_url: 'git@github.com:ChilliCream/hotchocolate.git'
+  pushed_at: '2019-02-15T11:48:41Z'
+  updated_at: '2019-02-14T23:34:21Z'
+  author:
+    name: 'ChilliCream'
+    avatar: 'https://avatars0.githubusercontent.com/u/16239022?v=4'
+    github_url: 'https://github.com/ChilliCream'
+  latestRelease:
+    tag_name: '0.8.0-preview.2'
+    name: '0.8.0-preview.2'
+    url: 'https://github.com/ChilliCream/hotchocolate/releases/tag/0.8.0-preview.2'
+    created_at: '2019-02-10T07:35:57Z'
+---
+![HotChocolate](https://cdn.rawgit.com/ChilliCream/hotchocolate-logo/acacc5b353f4a21bc03591d9910232c3c748d552/img/hotchocolate-banner-light.svg)
+
+[![GitHub release](https://img.shields.io/github/release/chillicream/HotChocolate.svg)](https://github.com/ChilliCream/hotchocolate/releases) [![NuGet Package](https://img.shields.io/nuget/v/hotchocolate.svg)](https://www.nuget.org/packages/HotChocolate/) [![License](https://img.shields.io/github/license/ChilliCream/hotchocolate.svg)](https://github.com/ChilliCream/hotchocolate/releases) [![AppVeyor](https://ci.appveyor.com/api/projects/status/uf8xnbyo32bh7ge1/branch/master?svg=true)](https://ci.appveyor.com/project/rstaib/zeus) [![Travis](https://travis-ci.org/ChilliCream/hotchocolate.svg?branch=master)](https://travis-ci.org/ChilliCream/hotchocolate) [![Tests](https://img.shields.io/appveyor/tests/rstaib/zeus/master.svg)](https://ci.appveyor.com/project/rstaib/zeus) [![Coverage Status](https://sonarcloud.io/api/project_badges/measure?project=HotChocolate&metric=coverage)](https://sonarcloud.io/dashboard?id=HotChocolate) [![Quality](https://sonarcloud.io/api/project_badges/measure?project=HotChocolate&metric=alert_status)](https://sonarcloud.io/dashboard?id=HotChocolate) [![BCH compliance](https://bettercodehub.com/edge/badge/ChilliCream/hotchocolate?branch=master)](https://bettercodehub.com/)
+
+---
+
+**Hot Chocolate is a GraphQL server for _.NET Core_ and _.NET Classic_**
+
+_Hot Chocolate_ is a GraphQL server and parser implementation based on the current GraphQL [June 2018 specification](http://facebook.github.io/graphql/June2018/) defined by Facebook.
+
+## Getting Started
+
+If you are just getting started with GraphQL a good way to learn is visiting [GraphQL.org](https://graphql.org).
+We have implemented the Star Wars example with the Hot Chocolate API and you can use our example implementation to follow along.
+
+To generate the example project, head over to your console and fire up the following commands:
+
+```bash
+mkdir starwars
+cd starwars
+dotnet new -i HotChocolate.Templates.StarWars
+dotnet new starwars
+```
+
+The GraphQL specification and more is available on the [Facebook GraphQL repository](https://github.com/facebook/graphql).
+
+If you want to get in touch with us you can do so by joining our [slack group](https://join.slack.com/t/hotchocolategraphql/shared_invite/enQtNTA4NjA0ODYwOTQ0LTBkZjNjZWIzMmNlZjQ5MDQyNDNjMmY3NzYzZjgyYTVmZDU2YjVmNDlhNjNlNTk2ZWRiYzIxMTkwYzA4ODA5Yzg).
+
+### Using Hot Chocolate
+
+The easiest way to get a feel for the API is to walk through our README example. If you need additional information, you can also have a look at our [documentation](http://hotchocolate.io).
+
+_Hot Chocolate_ can build a GraphQL schema, serve queries against that schema and host that schema for web requests.
+
+_For our examples we use .net core and the dotnet CLI which you can download [here](https://dot.net)._
+
+Let’s get started by setting up a new console application that we will use to showcase how to set up a GraphQL schema and execute queries against it.
+
+```bash
+mkdir graphql-demo
+cd graphql-demo
+dotnet new console -n graphql-console
+```
+
+Now add the query engine package to your project with the following command.
+
+```bash
+dotnet add package HotChocolate
+```
+
+The GraphQL schema describes the capabilities of a GraphQL API. _Hot Chocolate_ allows you to do that code-first by defining .net classes describing that schema or schema-first by defining the schema in the GraphQL syntax and binding resolvers to it. Our README walkthrough shows you the code-first approach.
+
+The following example shows the code-first approach.
+
+```csharp
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        var schema = Schema.Create(c => c.RegisterQueryType<Query>());
+    }
+}
+
+public class Query
+{
+    public string Hello() => 'world';
+}
+```
+
+The code above defines a simple schema with one type `Query` and one field `hello` that returns a string.
+
+If you would write that schema down in the GraphQL syntax it would look as follows:
+
+```graphql
+type Query {
+  hello: String
+}
+```
+
+Moreover, we bound a resolver to the field that returns a fixed value _world_. A resolver is basically a function that resolves the data for the specified field.
+
+In order to serve up queries against our schema lets make it executable:
+
+```csharp
+var executor = schema.MakeExecutable();
+```
+
+Now that the schema is setup and executable we can serve up a query against it.
+
+```graphql
+{
+  hello
+}
+```
+
+```csharp
+// Prints
+// {
+//   data: { hello: 'world' }
+// }
+Console.WriteLine(executor.Execute('{ hello }'));
+```
+
+This runs a query fetching the one field defined. The graphql function will first ensure the query is syntactically and semantically valid before executing it, reporting errors otherwise.
+
+```csharp
+// {
+//   'errors': [
+//     {
+//       'FieldName': 'foo',
+//       'Locations': [
+//         {
+//           'Line': 1,
+//           'Column': 3
+//         }
+//       ],
+//       'Message': 'Could not resolve the specified field.'
+//     }
+//   ]
+// }
+Console.WriteLine(executor.Execute('{ foo }'));
+```
+
+In order to set up a GraphQL HTTP endpoint, Hot Chocolate comes with an ASP.net core middleware.
+
+Create a new project with the web template that comes with your dotnet CLI.
+
+```bash
+dotnet new web -n graphql-web
+```
+
+Now add our middleware package to the project with the following command.
+
+```bash
+dotnet add package HotChocolate.AspNetCore
+```
+
+Open the Startup.cs and add the following code.
+
+```csharp
+protected override void ConfigureServices(IServiceCollection services)
+{
+    services.AddGraphQL(c => c.RegisterQueryType<ObjectType<Query>>());
+}
+```
+
+The above example adds the GraphQL schema and the execution engine to the dependency injection.
+
+```csharp
+protected override void Configure(IApplicationBuilder app, IHostingEnvironment env)
+{
+    if (env.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+    app.UseGraphQL();
+}
+```
+
+This will set up all the necessary endpoints to query the GraphQL schema via HTTP GET or HTTP POST. In order to run a query against your schema, start your web host and get [GraphiQL](https://github.com/graphql/graphiql).
+
+By default, the middleware will be configured to listen on the service root for GraphQL requests. If you want to use a different endpoint route you can pass the desired route into the UseGraphQL instruction.
+
+```csharp
+protected override void Configure(IApplicationBuilder app, IHostingEnvironment env)
+{
+    if (env.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+    app.UseGraphQL('Foo/Bar');
+}
+```
+
+_We are also currently working on a middleware for ASP.net classic which is planned for Version 0.6.0._
+
+### Templates
+
+Apart from the Star Wars template, we also have a GraphQL server template that generates a project with everything hooked up so that you can start building your API quickly.
+
+To install the GraphQL server template, run the following command:
+
+```bash
+dotnet new -i HotChocolate.Templates.Server
+```
+
+Now that you have implemented this you can generate a new server project by running the following commands.
+
+```bash
+mkdir myserver
+cd myserver
+dotnet new graphql-server
+```
+
+## Features and Roadmap
+
+We have moved the roadmap into the [ROADMAP.md](ROADMAP.md)
+
+## GraphQL Compatibility Acceptance Tests
+
+We are now investing to implement the GraphQL Compatibility Acceptance Tests for Hot Chocolate. We should have the first test running with Version 0.8.0 and should have this finished until Version 0.11.0.
+
+More about GraphQL compatibility acceptance tests can be read [here](https://github.com/graphql-cats/graphql-cats).
+
+## Documentation
+
+For more examples and detailed documentation, click [here](http://hotchocolate.io).
+
+For documentation about our _DataLoader_ implementation click [here](https://github.com/ChilliCream/greendonut).
