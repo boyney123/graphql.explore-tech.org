@@ -637,6 +637,7 @@ pre tt:after {
 .main p {
   font-style: italic;
   margin: 0;
+  color: #ef27ad;
   /* margin-bottom: 20px; */
 }
 
