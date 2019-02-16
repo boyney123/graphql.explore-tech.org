@@ -13,16 +13,25 @@ const SiteHeader = ({ count }) => {
 
           <h1 className="title">{title}</h1>
 
-          <h2 className="subtitle">{description}</h2>
+          <h2 className="description">{description}</h2>
 
           <a
-            className="button is-medium add-action"
+            className="button is-medium add-action contribute"
             href="https://github.com/boyney123/graphql.explore-tech.org/blob/master/CONTRIBUTING.md#adding-a-material-to-the-website"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-github" />
-            Contribute
+            Add Resource
+          </a>
+          <a
+            className="button is-medium add-action twitter"
+            href="https://twitter.com/intent/tweet?text=An%20open%20source%20project%20that%20lists%20resources%20to%20help%20developers%20explore%20GraphQL%20%F0%9F%91%8D.%0A%0A%20https%3A%2F%2Fgraphql.explore-tech.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-twitter" />
+            Share with others
           </a>
           <p className="mt20">
             We have {count} resource's for you to explore...

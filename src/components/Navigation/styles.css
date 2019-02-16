@@ -1,15 +1,15 @@
-nav.navbar {
-  padding: 0 70px;
+.nav {
   background-color: #2f3241;
   border-bottom: 1px solid #e8e8e8;
   border-bottom-color: #1a1b23;
+  padding: 15px 80px;
+  color: white;
 }
 
-.navbar a {
-  margin-top: 12px;
+.nav a {
+  color: white;
 }
 
-.navbar a,
-.navbar a:hover {
+.nav a:hover {
   color: #ef27ad;
 }

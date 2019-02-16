@@ -730,6 +730,11 @@ pre tt:after {
   background: white;
 }
 
+.main.hero .contribute {
+  margin-right: 10px;
+  background: #c13f9a;
+}
+
 .main img {
   width: 150px;
 }
@@ -743,15 +748,6 @@ pre tt:after {
   color: #ffffff;
   font-size: 2rem;
   margin-bottom: 0 !important;
-}
-
-@media screen and (max-width: 768px) {
-  .main .title {
-    font-size: 2em;
-  }
-  .main .subtitle {
-    font-size: 1.5em;
-  }
 }
 
 .no-results {
@@ -772,12 +768,37 @@ pre tt:after {
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 40px;
-  }
+.main .description {
+  font-size: 2em;
+  color: white;
 }
 
 .content {
   margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+
+  .main .title {
+    font-size: 2em;
+  }
+  .main .description {
+    font-size: 1.5em;
+  }
+
+  .main .description {
+    margin: 20px 0;
+  }
+
+  .main .button {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .main .hero-body {
+    padding: 0;
+  }
 }
