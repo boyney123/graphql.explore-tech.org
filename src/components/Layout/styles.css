@@ -729,13 +729,6 @@ pre tt:after {
   background: white;
 }
 
-.content h1,
-h2,
-h3,
-h4 {
-  color: white;
-}
-
 .main img {
   width: 150px;
 }
