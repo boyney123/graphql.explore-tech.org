@@ -10,7 +10,7 @@
 
 [![Travis](https://img.shields.io/travis/boyney123/graphql.explore-tech.org/master.svg)](https://travis-ci.org/boyney123/graphql.explore-tech.org)
 [![CodeCov](https://codecov.io/gh/boyney123/graphql.explore-tech.org/branch/master/graph/badge.svg?token=AoXW3EFgMP)](https://codecov.io/gh/boyney123/graphql.explore-tech.org)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b8b80b61-4213-4bd8-ac48-831738e1ca1b/deploy-status)](https://app.netlify.com/sites/react-openlist/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e9d1f843-a75d-4737-8fb8-411020bcaa40/deploy-status)](https://app.netlify.com/sites/graphql-explore-tech/deploys)
 [![MIT License][license-badge]][license]
 [![PRs Welcome][prs-badge]][prs]
 
