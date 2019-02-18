@@ -8,7 +8,7 @@ exports[`Footer renders correctly 1`] = `
     className="has-text-centered"
   >
     <p>
-      An open source list of React Tools.
+      An open source list of GraphQL Tools.
     </p>
     <a
       className="text-gray-light"

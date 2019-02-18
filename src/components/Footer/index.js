@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="has-text-centered">
-        <p>An open source list of React Tools.</p>
+        <p>An open source list of GraphQL Tools.</p>
 
         <a className="text-gray-light" href="https://github.com/boyney123">
           Developed by David Boyne
