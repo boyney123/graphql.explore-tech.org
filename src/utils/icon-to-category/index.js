@@ -12,6 +12,7 @@ import go from '../../icons/go.svg'
 import java from '../../icons/java.png'
 import scala from '../../icons/scala.png'
 import sql from '../../icons/sql.png'
+import julia from '../../icons/julia.png'
 
 export default {
   Tools: hammer,
@@ -27,4 +28,5 @@ export default {
   Java: java,
   Scala: scala,
   Sql: sql,
+  Julia: julia,
 }

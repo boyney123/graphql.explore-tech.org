@@ -12,6 +12,7 @@ import go from '../../icons/go.svg'
 import java from '../../icons/java.png'
 import scala from '../../icons/scala.png'
 import sql from '../../icons/sql.png'
+import julia from '../../icons/julia.png'
 
 import map from './'
 
@@ -30,5 +31,6 @@ describe('icon-to-category', () => {
     expect(map.Java).toEqual(java);
     expect(map.Scala).toEqual(scala);
     expect(map.Sql).toEqual(sql);
+    expect(map.Julia).toEqual(julia);
   })
 })
