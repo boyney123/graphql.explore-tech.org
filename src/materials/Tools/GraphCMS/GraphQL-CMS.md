@@ -1,7 +1,7 @@
 ---
 path: '/materials/GraphCMS'
 type: 'GitHub'
-img: './screenshot.png'
+img: './Screen Shot 2019-05-22 at 09.09.20.png'
 material:
   title: 'GraphCMS'
   url: 'https://graphcms.com/'
